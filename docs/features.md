@@ -112,9 +112,9 @@ Machine Gun Zoom Scope: | Rail Gun Zoom Scope:
 ### Configure the Zoom Scopes:
 There are some options to configure the scopes to your liking (the values listed are the default values): 
 
-1. Scale the scope with `cg_zoomscopesize 1.0`. This takes a float value.
-2. Rail Gun Scope Color `cg_zoomscopeRGcolor "H120 1.0 0.5"`
-3. Machine Gun Scope Color `cg_zoomscopeMGcolor "H60 1.0 0.5"`
+- Scale the scope with `cg_zoomscopesize 1.0`. This takes a float value.
+- Rail Gun Scope Color `cg_zoomscopeRGcolor "H120 1.0 0.5"`
+- Machine Gun Scope Color `cg_zoomscopeMGcolor "H60 1.0 0.5"`
 
 To configure the color, use HSL (Hue, Saturation, Lightness) format. The H value accepts a number from 0 to 360. The S and L values accept a float value from 0.0 to 1.0. 
 
