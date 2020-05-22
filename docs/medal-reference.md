@@ -12,8 +12,8 @@ Medal Icon | Description
 ![](images/medals/medal_frags.png) | **Frags**<br>Frag three opponents within a short period of time.
 ![](images/medals/medal_accuracy.png) | **Accuracy**<br>Hit an opponent multiple times with the same weapon with perfect accuracy.
 ![](images/medals/medal_aimbot.png) | **Aimbot**<br>Turn very quickly and hit an opponent with rail gun.
-![](images/medals/medal_airnade.png) | **Air-Nade**<br>Frag an opponent with a grenade while they are in the air.
-![](images/medals/medal_airrocket.png) | **Air-Rocket**<br>Frag an opponent with a rocket while they are in the air.
+![](images/medals/medal_airnade.png) | **Air-Nade**<br>Hit an opponent with a grenade while they are in the air.
+![](images/medals/medal_airrocket.png) | **Air-Rocket**<br>Hit an opponent with a rocket while they are in the air.
 ![](images/medals/medal_ambush.png) | **Ambush**<br>Frag an opponent who just spawned or just came through a portal.
 ![](images/medals/medal_berserker.png) | **Berserker**<br>Get 3 gaunt kills in a row without dying.
 ![](images/medals/medal_fullsg.png) | **Point Blank**<br>Shoot an opponent at point blank range with the shotgun so that all pellets hit.
@@ -31,7 +31,7 @@ Medal Icon | Description
 ![](images/medals/medal_telefrag.png) | **Telefrag**<br>Teleport into another players personal space and kill them.
 ![](images/medals/medal_teleprojectile.png) | **Interdimensional**<br>Frag an opponent through the teleporter with any projectile.
 ![](images/medals/medal_revenge.png) | **Revenge**<br>Awarded for fragging the opponent that killed you quickly after you respawn.
-![](images/medals/medal_butcher.png) | **Butcher**<br>Awarded after getting 10 gibs during a match.
+![](images/medals/medal_butcher.png) | **Butcher**<br>Awarded for gibbing 10 corpses using the gauntlet.
 ![](images/medals/medal_vaporized.png) | **Vaporized**<br>Frag an opponent by doing more than 100 plasma damage within 800ms.
 ![](images/medals/medal_killspree10.png) | **Killing Spree**<br>Awarded for a killing spree of 5.
 ![](images/medals/medal_killspree20.png) | **Rampage**<br>Awarded for a killing spree of 10.

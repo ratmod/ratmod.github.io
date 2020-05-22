@@ -96,3 +96,37 @@ telemissiles | Enable/Disable projectiles going through the teleport. On by defa
 throughwalls | Enable/Disable damage through walls and floors.
 unmute | Unmute the spectators.
 vampire | Enable/Disable vampire mode. - description?
+
+
+
+## The Team Queue System
+
+There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.
+
+This is not yet on by default and it is a vote: `\cv custom queues`
+
+- All people waiting in queue will be shown on the scoreboard. Red "queue" text means the player is waiting to join the red team. Blue text for blue team. White text is for those who auto-joined.
+- All people waiting in queue will be spectating the game and will have a message on their screen "Waiting to join team (red/blue)
+
+### Joining Games
+When the queue system is turned on, this is how it handles a few common situations:
+
+#### Situation: A player wants to be ready to play...
+A good way to indicate that you want to play is just to join. Other spectators can then see on the scoreboard that you want to play and which team you want to join. As soon as someone else joins the opposite team or auto-join, you will enter the game.
+
+#### Situation: spectators want to join the game...
+- If someone from spectators tries to join a team, they will go into the queue.
+- For example, Player A joins red and is in queue for red. When Player B joins blue, they will both be added to the game. 
+- If Player B accidentally joins red, both players will be in the queue for the red team. Without the queue system, both players would be on team red and team red would win!
+
+### Balancing
+In addition to the queues, the vote also enables a re-balancing system that makes sure the teams have equal numbers of players even if players leave during the game:
+
+#### Situation: A player leaves a team...
+- If the teams become unequal because one or more of the players leave, then the game will equalize the player numbers. The server will wait for a few moments before taking action. 
+- In XTERM/CA this balancing will happen after the current round is finished. In CTF it will happen after a few moments. The server will also display messages in the console and on the screen that this will happen.
+- Who is put into the queue? The last player who joined will be put back into his team's queue. In the case that all players joined at the same time it will be the one with the lowest score.
+
+#### Situation: Two players want to switch teams
+- The queue system makes it easier to handle players switching to opposite teams. 
+- Player A switches from blue to red and will be in the red queue. If someone doesn't switch very soon from red to blue, the server will equalize the number of players - moving a red player to the queue.
