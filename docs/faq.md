@@ -14,7 +14,7 @@ It is not recommended to use **yuengine**. This engine is known to produce audio
 
 Forcing colors only works when the server configuration allows it.
 
-### Can I copy my config from \<insert other mod/game\> here?
+### Can I copy my config from <insert other mod/game\> here?
 
 While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but *don't* try to copy q3config.cfg between different mods.
 
