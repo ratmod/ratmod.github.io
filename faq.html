@@ -57,17 +57,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="getting-started.html">Getting Started with Ratmod</a>
+    <a class="" href="getting-started.html">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="config-command-reference.html">Config and Command Reference</a>
 	    </li>
           
             <li class="toctree-l1">
 		
     <a class="" href="medal-reference.html">Medal Reference</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="features.html">Features</a>
 	    </li>
           
             <li class="toctree-l1 current">
@@ -76,6 +76,20 @@
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#faq">FAQ</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#what-engines-are-compatible-with-ratmod">What Engines are compatible with Ratmod?</a></li>
+        
+            <li><a class="toctree-l3" href="#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</a></li>
+        
+            <li><a class="toctree-l3" href="#can-i-copy-my-config-from-insert-other-modgame62-here">Can I copy my config from \&lt;insert other mod/game> here?</a></li>
+        
+            <li><a class="toctree-l3" href="#how-do-i-change-the-status-bar-style">How do I change the status bar style?</a></li>
+        
+            <li><a class="toctree-l3" href="#how-do-i-turn-off-taunts">How do I turn off taunts?</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -114,7 +128,30 @@
             <div class="section">
               
                 <h1 id="faq">FAQ</h1>
-<p>It seems there are no frequently asked questions at the moment.</p>
+<h3 id="what-engines-are-compatible-with-ratmod">What Engines are compatible with Ratmod?</h3>
+<p>Since ioquake3 is open source there are several options. These are known to work well:</p>
+<ul>
+<li><a href="https://github.com/ioquake/ioq3">ioquake3</a>. If you are compiling ioquake3 on your own, make sure to do so with Ogg Vorbis support. Using ioquake3 engine will require you to set up a folder with the baseoa pk3s and launch the engine with the following (for linux): <code>path/to/ioq3 +set com_basegame "baseoa" +set com_legacyprotocol 71 +set com_protocol 71 +set sv_master1 dpmaster.deathmask.net +set fs_basepath "path/to/parent/folder/of/baseoa/pk3/folder" +set fs_homepath "/path/to/username/.openarena"</code></li>
+<li><a href="http://openarena.ws/download.php">openarena engine</a> (ioquake3+oa) (this is outdated). This is also available in various Linux distributions.</li>
+<li><a href="http://www.h4l-group.de/pub/Q3_engines/fX3/client/for_OA/">fx3</a></li>
+</ul>
+<p>It is not recommended to use <strong>yuengine</strong>. This engine is known to produce audio and visual bugs with ratmod.</p>
+<h3 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h3>
+<p>Forcing colors only works when the server configuration allows it.</p>
+<h3 id="can-i-copy-my-config-from-insert-other-modgame62-here">Can I copy my config from \&lt;insert other mod/game> here?</h3>
+<p>While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but <em>don't</em> try to copy q3config.cfg between different mods.</p>
+<h3 id="how-do-i-change-the-status-bar-style">How do I change the status bar style?</h3>
+<p>Use <code>cg_ratstatusbar</code> with a value of:</p>
+<ul>
+<li><code>0</code> = old-school OA statusbar</li>
+<li><code>1</code> = flag on the left</li>
+<li><code>2</code> = flag on right</li>
+<li><code>3</code> = minimalistic version</li>
+<li><code>4</code> = futuristic statusbar with health/armor bars in the center, ammo bar on the left. Also enables new powerup display</li>
+<li><code>5</code> = similar to 4, but vertically flipped</li>
+</ul>
+<h3 id="how-do-i-turn-off-taunts">How do I turn off taunts?</h3>
+<p>You can vote to toggle it off or on with <code>\cv custom taunts</code>.</p>
               
             </div>
           </div>
@@ -123,7 +160,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="features.html" class="btn btn-neutral" title="Features"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="medal-reference.html" class="btn btn-neutral" title="Medal Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -149,7 +186,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="features.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="medal-reference.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

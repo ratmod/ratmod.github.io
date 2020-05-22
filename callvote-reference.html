@@ -20,7 +20,7 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Server Manual";
-    var mkdocs_page_input_path = "server-manual.md";
+    var mkdocs_page_input_path = "callvote-reference.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -57,17 +57,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="getting-started.html">Getting Started with Ratmod</a>
+    <a class="" href="getting-started.html">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="config-command-reference.html">Config and Command Reference</a>
 	    </li>
           
             <li class="toctree-l1">
 		
     <a class="" href="medal-reference.html">Medal Reference</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="features.html">Features</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -393,6 +393,36 @@
 </tr>
 </tbody>
 </table>
+<h2 id="the-team-queue-system">The Team Queue System</h2>
+<p>There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.</p>
+<p>This is not yet on by default and it is a vote: <code>\cv custom queues</code></p>
+<ul>
+<li>All people waiting in queue will be shown on the scoreboard. Red "queue" text means the player is waiting to join the red team. Blue text for blue team. White text is for those who auto-joined.</li>
+<li>All people waiting in queue will be spectating the game and will have a message on their screen "Waiting to join team (red/blue)</li>
+</ul>
+<h3 id="joining-games">Joining Games</h3>
+<p>When the queue system is turned on, this is how it handles a few common situations:</p>
+<h4 id="situation-a-player-wants-to-be-ready-to-play">Situation: A player wants to be ready to play...</h4>
+<p>A good way to indicate that you want to play is just to join. Other spectators can then see on the scoreboard that you want to play and which team you want to join. As soon as someone else joins the opposite team or auto-join, you will enter the game.</p>
+<h4 id="situation-spectators-want-to-join-the-game">Situation: spectators want to join the game...</h4>
+<ul>
+<li>If someone from spectators tries to join a team, they will go into the queue.</li>
+<li>For example, Player A joins red and is in queue for red. When Player B joins blue, they will both be added to the game. </li>
+<li>If Player B accidentally joins red, both players will be in the queue for the red team. Without the queue system, both players would be on team red and team red would win!</li>
+</ul>
+<h3 id="balancing">Balancing</h3>
+<p>In addition to the queues, the vote also enables a re-balancing system that makes sure the teams have equal numbers of players even if players leave during the game:</p>
+<h4 id="situation-a-player-leaves-a-team">Situation: A player leaves a team...</h4>
+<ul>
+<li>If the teams become unequal because one or more of the players leave, then the game will equalize the player numbers. The server will wait for a few moments before taking action. </li>
+<li>In XTERM/CA this balancing will happen after the current round is finished. In CTF it will happen after a few moments. The server will also display messages in the console and on the screen that this will happen.</li>
+<li>Who is put into the queue? The last player who joined will be put back into his team's queue. In the case that all players joined at the same time it will be the one with the lowest score.</li>
+</ul>
+<h4 id="situation-two-players-want-to-switch-teams">Situation: Two players want to switch teams</h4>
+<ul>
+<li>The queue system makes it easier to handle players switching to opposite teams. </li>
+<li>Player A switches from blue to red and will be in the red queue. If someone doesn't switch very soon from red to blue, the server will equalize the number of players - moving a red player to the queue.</li>
+</ul>
               
             </div>
           </div>
