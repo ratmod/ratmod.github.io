@@ -1,3 +1,4 @@
+![rathead](themes/../theme/img/ratmod_header_logo.svg)
 # Ratmod - by the rats, for the rats
 
 This is documentation for a mod for for [Open Arena (OA)](http://www.openarena.ws) - a Quake 3 Arena clone. 
