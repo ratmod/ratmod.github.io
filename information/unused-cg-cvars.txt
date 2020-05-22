@@ -1,0 +1,91 @@
+
+- `set cg_noBubbleTrail 1` - ?
+- `cg_noProjectileTrail` - Toggle the display of smoke trail effect behind projectiles (rockets). 
+? - `cg_teamOverlayAutoColor` - 
+
+Other: 
+
+- `cg_delagProjectileTrail`
+- `cg_ratPredictMissiles`
+- `cg_predictPlayerExplosions`
+- `cg_predictExplosions`
+- `cg_predictWeapons`
+- `cg_predictTeleport`
+- `cg_optimizePrediction`
+- `cg_projectileNudgeAuto`
+- `cg_projectileNudge`
+- `cg_cmdTimeNudge`
+- `cg_delag`
+- `cg_nopredict`
+- `cg_predictItems`
+- `cg_predictItemsNearPlayers`
+
+### Movement
+- `cg_bobroll`
+- `cg_bobpitch`
+- `cg_runroll`
+- `cg_runpitch`
+- `cg_bobGun`
+
+
+## Not Needed?
+- `cg_thirdPerson`
+- `cg_showmiss`
+- `cg_crosshairY`
+- `cg_crosshairX`
+- `cg_ignore`
+- `cg_autoswitch`
+- `cg_viewsize`
+- `cg_shadows`
+- `cg_marks`
+- `cg_brassTime`
+- `cg_drawSnapshot`
+- `cg_gibs`
+- `cg_drawGun`
+- `cg_soundBufferDelay`
+- `cg_trueLightning`
+- `cg_deferPlayers`
+- `cg_scorePlums`
+- `cg_weaponOrder`
+- `cg_thTokenIndicator`
+- `cg_itemFade`
+- `cg_drawSpawnpoints`
+- `cg_powerupBlink`
+- `cg_ratInitialized`
+- `cg_timescaleFadeSpeed`
+- `cg_timescaleFadeEnd`
+- `cg_cameraOrbitDelay`
+- `cg_picmipBackup`
+- `cg_autovertex`
+- `cg_cyclegrapple`
+- `cg_drawSpeed3D`
+- `cg_errordecay`
+
+
+### Further Customization for Communication
+- `cg_fontShadow`
+- `cg_teamChatLines`
+- `cg_chatLines`
+- `cg_commonConsoleLines`
+- `cg_consoleLines`
+- `cg_commonConsole`
+- `cg_teamChatSizeY`
+- `cg_teamChatSizeX`
+- `cg_chatSizeY`
+- `cg_chatSizeX`
+- `cg_consoleSizeY`
+- `cg_consoleSizeX`
+- `cg_newConsole`
+- `cg_newFont`
+- `cg_teamChatY`
+- `cg_teamChatTime`
+- `cg_consoleTime`
+- `cg_chatTime`
+- `cg_consoleStyle`
+- `cg_teamChatScaleY`
+- `cg_teamChatScaleX`
+- `cg_teamChatHeight`
+- `cg_teamChatsOnly`
+- `cg_voipTeamOnly`
+- `cg_noVoiceText`
+- `cg_noVoiceChats`

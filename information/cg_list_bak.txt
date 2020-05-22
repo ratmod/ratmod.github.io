@@ -1,0 +1,274 @@
+A = Automatically archived (saved to q3config), L = Latched (only takes effect after vid_restart), C = cheat-protected, R = ROM, U = userinfo (gets sent to the server whenever it changes)
+
+
+
+     A    cg_teamChatBeep
+     A    cg_chatBeep
+     A    cg_weaponOrder
+     A    cg_weaponBarStyle
+     A    cg_crosshairColorBlue
+     A    cg_crosshairColorGreen
+     A    cg_crosshairColorRed
+     A    cg_ch13size
+     A    cg_ch13
+     A    cg_ch12size
+     A    cg_ch12
+     A    cg_ch11size
+     A    cg_ch11
+     A    cg_ch10size
+     A    cg_ch10
+     A    cg_ch9size
+     A    cg_ch9
+     A    cg_ch8size
+     A    cg_ch8
+     A    cg_ch7size
+     A    cg_ch7
+     A    cg_ch6size
+     A    cg_ch6
+     A    cg_ch5size
+     A    cg_ch5
+     A    cg_ch4size
+     A    cg_ch4
+     A    cg_ch3size
+     A    cg_ch3
+     A    cg_ch2size
+     A    cg_ch2
+     A    cg_ch1size
+     A    cg_ch1
+     A    cg_differentCrosshairs
+     A    cg_crosshairPulse
+     A    cg_fragmsgsize
+     A    cg_music
+     A    cg_trueLightning
+     A    cg_optimizePrediction
+     A    cg_projectileNudgeAuto
+     A    cg_projectileNudge
+  U  A    cg_cmdTimeNudge
+  U  A    cg_delag
+     A    cg_oldPlasma
+     A    cg_leiSuperGoreyAwesome
+     A    cg_leiBrassNoise
+     A    cg_leiGoreNoise
+     A    cg_leiEnhancement
+     AL   cg_oldMachinegun
+     A    cg_oldRocket
+     A    cg_oldRail
+     A    cg_noProjectileTrail
+     A    cg_noTaunt
+     A    cg_thTokenIndicator
+     A    cg_bobGun
+     A    cg_itemFade
+     A    cg_teamCorpseValue
+     A    cg_teamCorpseSaturation
+     A    cg_enemyCorpseValue
+     A    cg_enemyCorpseSaturation
+     A    cg_enemyHeadColorAuto
+     A    cg_teamHeadColorAuto
+     A    cg_teamLegsColor
+     A    cg_enemyLegsColor
+     A    cg_teamTorsoColor
+     A    cg_enemyTorsoColor
+     A    cg_teamHeadColor
+     A    cg_enemyHeadColor
+     A    cg_teamColor
+     A    cg_enemyColor
+     A    cg_teamHueRed
+     A    cg_teamHueDefault
+     A    cg_teamHueBlue
+     A    cg_teamModel
+     A    cg_enemyModel
+     A    cg_brightOutline
+     A    cg_brightShellAlpha
+     A    cg_brightShells
+     A    cg_enemyFootsteps
+     A    cg_teamFootsteps
+     A    cg_myFootsteps
+     A    cg_enemySound
+     A    cg_teamSound
+     A    cg_mySound
+     A    cg_fontShadow
+     A    cg_fontScale
+          cg_teamChatLines
+          cg_chatLines
+          cg_commonConsoleLines
+          cg_consoleLines
+     A    cg_commonConsole
+          cg_teamChatSizeY
+          cg_teamChatSizeX
+          cg_chatSizeY
+          cg_chatSizeX
+          cg_consoleSizeY
+          cg_consoleSizeX
+     A    cg_newConsole
+     A    cg_newFont
+     A    cg_teamChatY
+     A    cg_teamChatTime
+     A    cg_consoleTime
+     A    cg_chatTime
+     A    cg_pickupScale
+     A    cg_speedScale
+     A    cg_fpsScale
+     A    cg_timerScale
+     A    cg_speedAlpha
+     A    cg_fpsAlpha
+     A    cg_timerAlpha
+     A    cg_drawTeamBackground
+     A    cg_teamOverlayAutoColor
+     A    cg_teamOverlayScale
+     A    cg_drawSpawnpoints
+     A    cg_quadHue
+     A    cg_quadAlpha
+     A    cg_quadStyle
+     A    cg_powerupBlink
+          cg_soundBufferDelay
+     AL   cg_announcerNewAwards
+     AL   cg_announcer
+     A    cg_radar
+     A    cg_friendFloatHealthSize
+     A    cg_friendFloatHealth
+     A    cg_crosshairNamesHealth
+     A    cg_crosshairNamesY
+     A    cg_reloadIndicatorAlpha
+     A    cg_reloadIndicatorHeight
+     A    cg_reloadIndicatorWidth
+     A    cg_reloadIndicatorY
+     A    cg_reloadIndicator
+     A    cg_emptyIndicator
+     A    cg_hudDamageIndicatorAlpha
+     A    cg_hudDamageIndicatorOffset
+     A    cg_hudDamageIndicatorScale
+     AL   cg_hudDamageIndicator
+     A    cg_drawHabarBackground
+     A    cg_zoomAnimScale
+     A    cg_zoomAnim
+     A    cg_zoomToggle
+     A    cg_specShowZoom
+     A    cg_noBubbleTrail
+     A    cg_consoleStyle
+     A    cg_ratLgImpact
+     AL   cg_ratLg
+     A    cg_ratRailRadius
+     A    cg_ratRailBeefy
+     AL   cg_ratRail
+     A    cg_ratRocketTrailTime
+     A    cg_ratRocketTrailStep
+     A    cg_ratRocketTrailRadius
+     A    cg_ratRocketTrailAlpha
+     A    cg_ratRocketTrail
+     AL   cg_rocketStyle
+     A    cg_ratPlasmaTrailTime
+     A    cg_ratPlasmaTrailStep
+     A    cg_ratPlasmaTrailAlpha
+     A    cg_ratPlasmaTrail
+     A    cg_ratStatusbar
+          cg_ratScoreboardAccuracy
+     A    cg_ratScoreboard
+          cg_delagProjectileTrail
+     A    cg_ratPredictMissiles
+          cg_predictPlayerExplosions
+          cg_predictExplosions
+          cg_predictWeapons
+          cg_predictTeleport
+     A    cg_ratInitialized
+  U  A    cg_scorePlums
+          cg_timescaleFadeSpeed
+          cg_timescaleFadeEnd
+     A    cg_cameraOrbitDelay
+     A    cg_picmipBackup
+     A    cg_autovertex
+     A    cg_cyclegrapple
+     A    cg_voipTeamOnly
+     A    cg_hitsound
+     A    cg_alwaysWeaponBar
+     A    cg_noVoiceText
+     A    cg_noVoiceChats
+     A    cg_teamChatsOnly
+     A    cg_drawFriend
+          cg_stats
+     A    cg_drawTeamOverlay
+     A    cg_drawFollowPosition
+     A    cg_deferPlayers
+          cg_predictItemsNearPlayers
+     A    cg_forceModel
+     A    cg_teamChatScaleY
+     A    cg_teamChatScaleX
+     A    cg_teamChatHeight
+          cg_thirdPerson
+          cg_showmiss
+          cg_nopredict
+          cg_errordecay
+     A    cg_bobroll
+     A    cg_bobpitch
+     A    cg_runroll
+     A    cg_runpitch
+     A    cg_railTrailTime
+     A    cg_lagometer
+     A    cg_simpleItems
+     A    cg_crosshairHitStyle
+     A    cg_crosshairHitColor
+     A    cg_crosshairHit
+     A    cg_crosshairY
+     A    cg_crosshairX
+     A    cg_crosshairHealth
+     A    cg_crosshairSize
+     AL   cg_drawRewards
+     A    cg_zoomScopeMGColor
+     A    cg_zoomScopeRGColor
+     A    cg_zoomScopeSize
+     AL   cg_drawZoomScope
+          cg_drawSpeed3D
+     A    cg_drawSpeed
+     A    cg_drawPickup
+     A    cg_drawAttacker
+     A    cg_attackerScale
+     A    cg_drawAmmoWarning
+     A    cg_drawIcons
+     A    cg_draw3dIcons
+     A    cg_drawSnapshot
+     A    cg_drawFPS
+     A    cg_timerPosition
+     A    cg_drawTimer
+     A    cg_drawStatus
+     A    cg_draw2D
+     A    cg_gibs
+     A    cg_fov
+          cg_zoomfovTmp
+     A    cg_zoomfov
+     A    cg_drawGun
+          cg_ignore
+     A    cg_marks
+     A    cg_drawCrosshairNames
+     A    cg_drawCrosshair
+     A    cg_brassTime
+     A    cg_shadows
+     A    cg_viewsize
+  U  A    cg_predictItems
+     A    cg_autoswitch
+
+// These are read-only
+   R      cg_stereoSeparation
+   R      cg_ui_clientCommand
+   R      cg_thTokenstyle
+   R      cg_vote_custom_commands
+   R      cg_voteflags
+// These cheat-protected
+       C  cg_itemFadeTime
+       C  cg_cameraOrbit
+       C  cg_crosshairHitTime
+       C  cg_thirdPersonAngle
+       C  cg_thirdPersonRange
+       C  cg_tracerlength
+       C  cg_tracerwidth
+       C  cg_tracerchance
+       C  cg_footsteps
+       C  cg_noplayeranims
+       C  cg_debugevents
+       C  cg_debugposition
+       C  cg_debuganim
+       C  cg_animspeed
+       C  cg_centertime
+       C  cg_gunZ
+       C  cg_gunY
+       C  cg_gunX
+       C  cg_bobup
+       C  cg_swingSpeed
