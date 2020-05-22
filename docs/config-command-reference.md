@@ -94,7 +94,7 @@ Here are what the icons look like, but in game they have some visual effects (sc
 
 ![ping icons](images/other/pings.png)
 
-Check the [HUD section](#hud) for customizing the ping settings.
+Check the [Ping Icon Cusomization](#ping-icon-customization) section for customizing the ping settings.
 
 
 #### Drop token in Treasure Hunt gametype:

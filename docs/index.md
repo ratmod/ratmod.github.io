@@ -5,4 +5,7 @@ This is documentation for a mod for for [Open Arena (OA)](http://www.openarena.w
 
 Navigate to different pages using the navigation links.
 
-If you're looking for the general settings documentation, go to [Getting Started with Ratmod](getting-started.md).
+If you're new to Ratmod take a look at [Getting Started](getting-started.md). 
+
+If you want to jump into documentation, take a look at the [Config and Command Reference](config-command-reference.md).
+
