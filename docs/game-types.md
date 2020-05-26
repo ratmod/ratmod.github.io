@@ -39,14 +39,13 @@ There is quite a lot of time given for both phases, but it can be quite a challe
 ![Treasure Hunter HUD](images/screenshots/th-screenshot.png)
 
 A few special things to remember:
+
 - To place a token you need to use the command `\placetoken`. Bind it to a key: `\bind <key> placetoken` 
 - Tokens cannot be hidden in places where you normally die (in lava etc). 
 - If you are not happy with your token placement during the hiding phase, you can destroy it by shooting it and try again
 - When you discover a token during the seeking phase, to "catch" it you can touch it with your player model *or* you can shoot it. Tokens have a good deal of health so it is faster to touch it. 
 - The location of your teams tokens is shown with a diamond icon that can be seen from anywhere.
 - You cannot see the other team players but you can hear them.
-
-[Need screenshot of token and also HUD things.]
 
 Vote for this game type if it available with `\cv custom th`
 
