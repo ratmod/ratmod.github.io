@@ -107,11 +107,14 @@ Check the [Ping Icon Cusomization](#ping-icon-customization) section for customi
 ### Voting
 
 #### Using the map vote menu
-![mv thing](images/other/mv_screen.png)
 
 - `\mv` will open the menu
 - `\mv <filter>` will open the menu with an applied filter.
 - Example: `\mv aggressor` will show all the maps containing the string "aggressor"
+
+This is the screen that pops up with `\mv`:
+
+![mv screen](images/screenshots/mv-screenshot.svg)
 
 #### List all available votes
 - `\callvote`
@@ -154,9 +157,7 @@ Check the [Ping Icon Cusomization](#ping-icon-customization) section for customi
 
 Ratmod has a zoomscope available for machine gun and rail gun. To enable them use `set cg_drawZoomScope 1`. 
 
-Machine Gun Zoom Scope: | Rail Gun Zoom Scope:
------------------------ | --------------------
-![Machine Gun Zoom Scope](images/other/machine_gun_scope.jpg) | ![Rail Gun Zoom Scope](images/other/rail_gun_scope.jpg)
+![zoom scope](images/screenshots/zoomscope.svg)
 
 There are a few settings available to alter the appearance of the scopes:
 
@@ -176,10 +177,14 @@ There are several options available to force models and colors for models.
 ### Forcing Models
 
 Sarge and smarine each have a "gray" skin for brightshell and brightoutline overlays:
+
 - `set cg_teamModel sarge/gray` for your team
 - `set cg_enemyModel smarine/gray` for the enemy
 
+![sarge/gray models](images/screenshots/sarge-gray-models.svg)
+
 Alternatively, the "bright" skins are available for better performance (but don't look as good).
+
 - `set cg_teamModel sarge/bright` 
 - `set cg_enemyModel smarine/bright` 
 
@@ -346,7 +351,7 @@ There are some different options to show when you are receiving damage and what 
 ### Crosshairs
 A variety of crosshairs have been added for the sake of variety but also to address some clarity issues. Another point was to provide some varying sizes of similar crosshairs. (There is an in-game mechanism to adjust the crosshair size but that unfortunately does not always result in a crisp crosshair.)
 
-![Crosshair Map](images/other/ratmod_crosshairs_overview.png)
+![Crosshair Map](images/other/ratmod_crosshairs.svg)
 
 #### One crosshair for all weapons
 If you just want to use one crosshair, you can set it with the UI menu or you have two cvars to play with: `cg_drawcrosshair [num]` and `cg_crosshairsize [num]`.
