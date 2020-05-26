@@ -105,6 +105,11 @@
     <a class="" href="faq.html">FAQ</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="changelog.html">Change Log</a>
+	    </li>
+          
         </ul>
       </div>
       &nbsp;
@@ -240,12 +245,13 @@
 </ul>
 <h3 id="voting">Voting</h3>
 <h4 id="using-the-map-vote-menu">Using the map vote menu</h4>
-<p><img alt="mv thing" src="images/other/mv_screen.png" /></p>
 <ul>
 <li><code>\mv</code> will open the menu</li>
 <li><code>\mv &lt;filter&gt;</code> will open the menu with an applied filter.</li>
 <li>Example: <code>\mv aggressor</code> will show all the maps containing the string "aggressor"</li>
 </ul>
+<p>This is the screen that pops up with <code>\mv</code>:</p>
+<p><img alt="mv screen" src="images/screenshots/mv-screenshot.svg" /></p>
 <h4 id="list-all-available-votes">List all available votes</h4>
 <ul>
 <li><code>\callvote</code></li>
@@ -285,20 +291,7 @@
 </ul>
 <h3 id="zoom-scopes">Zoom Scopes</h3>
 <p>Ratmod has a zoomscope available for machine gun and rail gun. To enable them use <code>set cg_drawZoomScope 1</code>. </p>
-<table>
-<thead>
-<tr>
-<th>Machine Gun Zoom Scope:</th>
-<th>Rail Gun Zoom Scope:</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Machine Gun Zoom Scope" src="images/other/machine_gun_scope.jpg" /></td>
-<td><img alt="Rail Gun Zoom Scope" src="images/other/rail_gun_scope.jpg" /></td>
-</tr>
-</tbody>
-</table>
+<p><img alt="zoom scope" src="images/screenshots/zoomscope.svg" /></p>
 <p>There are a few settings available to alter the appearance of the scopes:</p>
 <ul>
 <li><code>set cg_zoomScopeSize</code> will change the size (try 0.8 for smaller)</li>
@@ -309,12 +302,17 @@
 <h2 id="forcing-models-and-brightskins">Forcing Models and Brightskins</h2>
 <p>There are several options available to force models and colors for models.</p>
 <h3 id="forcing-models">Forcing Models</h3>
-<p>Sarge and smarine each have a "gray" skin for brightshell and brightoutline overlays:
-- <code>set cg_teamModel sarge/gray</code> for your team
-- <code>set cg_enemyModel smarine/gray</code> for the enemy</p>
-<p>Alternatively, the "bright" skins are available for better performance (but don't look as good).
-- <code>set cg_teamModel sarge/bright</code> 
-- <code>set cg_enemyModel smarine/bright</code> </p>
+<p>Sarge and smarine each have a "gray" skin for brightshell and brightoutline overlays:</p>
+<ul>
+<li><code>set cg_teamModel sarge/gray</code> for your team</li>
+<li><code>set cg_enemyModel smarine/gray</code> for the enemy</li>
+</ul>
+<p><img alt="sarge/gray models" src="images/screenshots/sarge-gray-models.svg" /></p>
+<p>Alternatively, the "bright" skins are available for better performance (but don't look as good).</p>
+<ul>
+<li><code>set cg_teamModel sarge/bright</code> </li>
+<li><code>set cg_enemyModel smarine/bright</code> </li>
+</ul>
 <p>Set <code>cg_forceModel</code> to <code>1</code> to visually force other players have the same model as yours (for non-team based modes). <em>This is usually used for performance.</em></p>
 <p>If you wish to see your team mate's own models, you must set <code>cg_teamModel</code> to an empty value (<code>""</code>).</p>
 <h3 id="bright-shellsoutlines">Bright Shells/Outlines</h3>
@@ -459,7 +457,7 @@
 </ul>
 <h3 id="crosshairs">Crosshairs</h3>
 <p>A variety of crosshairs have been added for the sake of variety but also to address some clarity issues. Another point was to provide some varying sizes of similar crosshairs. (There is an in-game mechanism to adjust the crosshair size but that unfortunately does not always result in a crisp crosshair.)</p>
-<p><img alt="Crosshair Map" src="images/other/ratmod_crosshairs_overview.png" /></p>
+<p><img alt="Crosshair Map" src="images/other/ratmod_crosshairs.svg" /></p>
 <h4 id="one-crosshair-for-all-weapons">One crosshair for all weapons</h4>
 <p>If you just want to use one crosshair, you can set it with the UI menu or you have two cvars to play with: <code>cg_drawcrosshair [num]</code> and <code>cg_crosshairsize [num]</code>.</p>
 <h4 id="configure-crosshair-for-each-weapon">Configure crosshair for each weapon</h4>
