@@ -58,6 +58,6 @@ Vote for this game type if it available with `\cv custom dueleq`
 
 ## Extended CA
 
-Clan arena with the extended weapons (grappling hook, .
+Clan arena with the extended weapons (grappling hook, chain gun, BFG, proximity mines).
 
 Vote for this game type if it available with `\cv custom extendedca`
