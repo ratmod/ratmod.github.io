@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="by the rats, for the rats">
+  
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Ratmod - ratmod</title>
+  <title>Performance Tweaks - ratmod</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Ratmod";
-    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_name = "Performance Tweaks";
+    var mkdocs_page_input_path = "tweaks.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -50,21 +50,9 @@
 	<ul class="current">
 	  
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="index.html">Ratmod</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#ratmod-by-the-rats-for-the-rats">Ratmod - by the rats, for the rats</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#getting-started-with-ratmod">Getting Started with Ratmod</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="index.html">Ratmod</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -109,7 +97,7 @@
     
       
     
-    <li>Ratmod</li>
+    <li>Performance Tweaks</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -119,34 +107,70 @@
           <div role="main">
             <div class="section">
               
-                <p><img alt="rathead" src="images/screenshots/ratmod-head-header.svg" /></p>
-<h1 id="ratmod-by-the-rats-for-the-rats">Ratmod - by the rats, for the rats</h1>
-<p>This is documentation for a mod for for <a href="http://www.openarena.ws">Open Arena (OA)</a> - a Quake 3 Arena clone. </p>
-<p>Navigate to different pages using the navigation links.</p>
-<h2 id="getting-started-with-ratmod">Getting Started with Ratmod</h2>
-<p>Ratmod is all set up for you with great defaults. Make sure that auto-download is on and when you go on a Ratmod server everything will be set for you. </p>
-<p>To make an enemy model green and team model pink:</p>
-<ul>
-<li><code>\cg_enemyColor green</code></li>
-<li><code>\cg_teamColor pink</code></li>
-</ul>
-<p>If you want the default team colors back, use a blank value: <code>""</code></p>
-<p>Some people ask: <a href="faq.html#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</a></p>
-<p>To see an overview of the available votes, type <code>\cv</code> in the game console.</p>
-<p>To see custom votes available, type <code>\cv custom</code> in the game console. You can also use the vote menu (Esc -&gt; Call Vote -&gt; Custom Vote)</p>
-<p>If you're new to ratmod, please check out the <a href="config-command-reference.html#helpful-binds-and-commands">Helpful Binds and Commands</a>.</p>
-<p>For further customization, check out the <a href="config-command-reference.html">Config and Command Reference</a>.</p>
+                <h1 id="performance-tweaks">Performance Tweaks</h1>
+<p>These are settings you may want to use in case the game has performance issues on your computer (low or unstable FPS).</p>
+<h2 id="engine-tweaks">Engine Tweaks</h2>
+<p>A basic thing you can do to improve is to reduce the resolution. </p>
+<p>Ioquake3 supports both opengl1 and opengl2 as a backend, but opengl2 is much slower on some machines. If your engine has the <code>cl_renderer</code> setting, try setting it to <code>opengl1</code>:</p>
+<pre><code>cl_renderer opengl1
+</code></pre>
+<p>Disabling dynamic lights can also help:</p>
+<pre><code>r_dynamicLight 0
+</code></pre>
+<p>If that doesn't help enough, you may want to disable some shader stages marked as "detail":</p>
+<pre><code>r_detailTextures 0
+</code></pre>
+<p>You can also try reducing the geometric details (higher number = less detail):</p>
+<pre><code>r_subdivisions 11
+r_subdivisions 21
+</code></pre>
+<p>Also reduces geometric details:</p>
+<pre><code>r_lodbias 1
+</code></pre>
+<p>This setting may cause performance issues if it's disabled:</p>
+<pre><code>r_allowExtensions 1
+</code></pre>
+<p>You can also disable the sky:</p>
+<pre><code>r_fastSky 1
+</code></pre>
+<p>Lastly, you can use vertex lighting. This should probably be the last option you try since it significantly reduces quality:</p>
+<pre><code>r_vertexLight 1
+</code></pre>
+<h2 id="mod-specific-tweaks">Mod-specific tweaks</h2>
+<p>There are are also certain mod settings that can have en effect on performance. Especially settings that create a lot of individual rendering entities can have a negative impact on performance.
+One such example is projectile trails, which you can disable with:</p>
+<pre><code>cg_noprojectileTrail 1
+</code></pre>
+<p>If you are using the new ratmod statusbar (<code>cg_ratStatusbar 4-5</code>), you can disable some of the decor elements:</p>
+<pre><code>cg_drawHabarDecor 0
+</code></pre>
+<p>as well as the background:</p>
+<pre><code>cg_drawHabarBackground 0
+</code></pre>
+<p>(this is disabled by default already)</p>
+<p>Some more settings that may help:</p>
+<pre><code>cg_drawFPS 2
+cg_simpleItems 1
+cg_ratRailBeefy 0
+</code></pre>
+<p>Disabling the rail spiral can help as well:</p>
+<pre><code>cg_ratRailRadius 0
+</code></pre>
+<p>You can also try a different statusbar:</p>
+<pre><code>cg_ratStatusBar 3
+</code></pre>
+<p>Or even more minimalistic:</p>
+<pre><code>cg_ratStatusBar 1
+cg_ratStatusBar 2
+</code></pre>
+<p>If you are playing with brightshells and noticing that performance drops when there are many players on, you may want to use the old, simpler bright skins instead of the brightshell overlays:</p>
+<pre><code>set cg_enemyModel smarine/bright
+set cg_teamModel sarge/bright
+</code></pre>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="config-command-reference.html" class="btn btn-neutral float-right" title="Config and Command Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
@@ -171,8 +195,6 @@
       
       
       
-        <span style="margin-left: 15px"><a href="config-command-reference.html" style="color: #fcfcfc">Next &raquo;</a></span>
-      
     </span>
 </div>
     <script>var base_url = '.';</script>
@@ -181,8 +203,3 @@
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2020-05-28 14:42:01
--->
