@@ -17,6 +17,12 @@ body.wy-body-for-nav, section.wy-nav-content-wrap {
   color: #b3b3b3;
 }
 
+@media screen and (min-width: 1400px) {
+  .wy-nav-content {
+    margin: 0;
+    background-color: #28282d;
+}
+}
 
 pre {
   background-color: transparent;
