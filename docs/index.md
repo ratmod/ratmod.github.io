@@ -1,11 +1,12 @@
-![rathead](themes/../theme/img/ratmod_header_logo.svg)
+![rathead](images/screenshots/ratmod-head-header.svg)
+
 # Ratmod - by the rats, for the rats
 
 This is documentation for a mod for for [Open Arena (OA)](http://www.openarena.ws) - a Quake 3 Arena clone. 
 
 Navigate to different pages using the navigation links.
 
-# Getting Started with Ratmod
+## Getting Started with Ratmod
 
 Ratmod is all set up for you with great defaults. Make sure that auto-download is on and when you go on a Ratmod server everything will be set for you. 
 
