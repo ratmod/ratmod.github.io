@@ -301,7 +301,6 @@ Use treb's voice with `set cg_announcer "treb"` and if you only want treb's voic
 - `set cg_teamChatBeep 1` - Toggle the chat beeps from your team. These are from any team you are on (red, blue, or spectator)
 - `set cg_chatBeep 1` - Toggle chat beep sounds on or off
 - `set cg_music 0` - Toggle music on or off
-- `set cg_noTaunt 0` - Toggle taunts on or off.
 - `set cg_hitsound 1`- Toggle wether or not hit sounds are played when you hit an enemy with your weapon. 
 
 
