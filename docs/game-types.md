@@ -49,9 +49,3 @@ Vote for this game type if it available with `\cv custom ffa_aw`
 To be fair with pings use this mode for duel. 
 
 Vote for this game type if it available with `\cv custom dueleq`
-
-## Extended CA
-
-Clan arena with the extended weapons (grappling hook, chain gun, BFG, proximity mines).
-
-Vote for this game type if it available with `\cv custom extendedca`
