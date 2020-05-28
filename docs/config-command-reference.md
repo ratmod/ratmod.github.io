@@ -558,7 +558,7 @@ There are different visual styles of rockets available. Set it with `cg_rocketst
 
 
 ## Cheat Protected CVARS
-*The following are cheat protected: cg_itemFadeTime, cg_cameraOrbit, cg_crosshairHitTime, cg_thirdPersonAngle, cg_thirdPersonRange, cg_tracerlength, cg_tracerwidth, cg_tracerchance, cg_footsteps, cg_noplayeranims, cg_debugevents, cg_debugposition, cg_debuganim, cg_animspeed, cg_centertime, cg_gunZ, cg_gunY, cg_gunX, cg_bobup, cg_swingSpeed*
+*The following are cheat protected: cg_itemFadeTime, cg_cameraOrbit, cg_crosshairHitTime, cg_thirdPersonAngle, cg_thirdPersonRange, cg_tracerlength, cg_tracerwidth, cg_tracerchance, cg_footsteps, cg_noplayeranims, cg_debugevents, cg_debugposition, cg_debuganim, cg_animspeed, cg_centertime, cg_gunY, cg_gunX, cg_bobup, cg_swingSpeed*
 
 
 
