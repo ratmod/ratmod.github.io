@@ -58,7 +58,7 @@ There are several commands that provide utilities or actions for gameplay.
 
 #### Spectator commands:
 - `\followauto` will automatically switch to follow the flag carrier
-- `\game <1-6>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
+- `\game <1-5>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
 
 #### Calling for timeout:
 - `bind PAUSE pause`
