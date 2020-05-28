@@ -57,7 +57,7 @@ There are several commands that provide utilities or actions for gameplay.
 - `\team a` = afk (away from keyboard)
 
 #### Spectator commands:
-- `\followauto` will automatically switch to follow the flag carrier
+- `\followauto` Automatically cycle spectating through players. It also switches to flag carriers automatically in CTF.
 - `\game <1-5>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
 
 #### Calling for timeout:
