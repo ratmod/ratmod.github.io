@@ -11,7 +11,6 @@ site_description: by the rats, for the rats
 use_directory_urls: false
 nav:
   - Ratmod: index.md
-  - Getting Started: getting-started.md
   - Config and Command Reference: config-command-reference.md
   - Medal Reference: medal-reference.md
   - Custom Game Types: game-types.md

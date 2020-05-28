@@ -5,7 +5,23 @@ This is documentation for a mod for for [Open Arena (OA)](http://www.openarena.w
 
 Navigate to different pages using the navigation links.
 
-If you're new to Ratmod take a look at [Getting Started](getting-started.md). 
+# Getting Started with Ratmod
 
-If you want to jump into documentation, take a look at the [Config and Command Reference](config-command-reference.md).
+Ratmod is all set up for you with great defaults. Make sure that auto-download is on and when you go on a Ratmod server everything will be set for you. 
 
+To make an enemy model green and team model pink:
+
+- `\cg_enemyColor green`
+- `\cg_teamColor pink`
+
+If you want the default team colors back, use a blank value: `""`
+
+Some people ask: [Why don't brightskins/shells/outlines show up even though I configured them?](faq.md#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them)
+
+To see an overview of the available votes, type `\cv` in the game console.
+
+To see custom votes available, type `\cv custom` in the game console. You can also use the vote menu (Esc -> Call Vote -> Custom Vote)
+
+If you're new to ratmod, please check out the [Helpful Binds and Commands](config-command-reference.md#helpful-binds-and-commands).
+
+For further customization, check out the [Config and Command Reference](config-command-reference.md).
