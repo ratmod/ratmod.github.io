@@ -309,14 +309,8 @@ Use treb's voice with `set cg_announcer "treb"` and if you only want treb's voic
 ## HUD
 
 
-### Awards Display
-`set cg_drawRewards 1` will show the awards you get immediately, with different awards appearing side-by-side. The announcements will be played in rapid succession. Set this to `2` to use the old OA way of showing awards slowly one after another. Set it to `0` to disable showing awards.
 
 
-### Weapon Bar
-The weapon bar will show you which weapons you have, which weapon is selected, and depending on the weapon bar style, how much ammo you have.
-
-Use `set cg_alwaysWeaponBar 1` to always show the weapon bar. If you want to change the style try `set cg_weaponBarStyle 13` or `14` for a horizontal weapon bar. `12` for vertical. There are 16 different styles in total.
 
 ### Status Bar
 The status bar shows your health, ammo, and armor amounts among other things. Use `cg_ratStatusbar` with these different values: 
@@ -329,6 +323,14 @@ The status bar shows your health, ammo, and armor amounts among other things. Us
 - `5` = similar to 4, but vertically flipped
 
 `cg_drawHabarBackground 1` - gives a background for the health/armor bar in the futuristic HUD.
+
+### Weapon Bar
+The weapon bar will show you which weapons you have, which weapon is selected, and depending on the weapon bar style, how much ammo you have.
+
+Use `set cg_alwaysWeaponBar 1` to always show the weapon bar. If you want to change the style try `set cg_weaponBarStyle 13` or `14` for a horizontal weapon bar. `12` for vertical. There are 16 different styles in total.
+
+### Awards Display
+`set cg_drawRewards 1` will show the awards you get immediately, with different awards appearing side-by-side. The announcements will be played in rapid succession. Set this to `2` to use the old OA way of showing awards slowly one after another. Set it to `0` to disable showing awards.
 
 ### Low or Empty Ammo Indicator
 - `set cg_drawAmmoWarning 1` will show you a low ammo warning
