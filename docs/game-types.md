@@ -5,6 +5,8 @@ Ratmod has several custom game types which will be explained here.
 ## Extermination (XTERM)
 Xterm (Extermination) is a spin-off of Clan Arena (CA/Elimination) and inspired by "Wipeout" from Diabotical. Some of the game mechanics are the same as CA, but some are different. There are two teams and players spawn with all weapons and a full health and armor stack. A round will finish when all players of one team are dead. When a team reaches the maximum points (5 by default), they win. 
 
+![xterm screenshot](images/screenshots/xterm.svg)
+
 When a player dies in Xterm they will respawn. Each team has their own respawn delay and the initial delay is 5 seconds. Every time a player dies that delay for that team increases by 5 seconds. The respawn timer for your own team is shown on the right side of the screen and also in the team overlay for each player. When someone respawns there is a sound played. The growing delay between spawns is what can often give one team an advantage over the other. When there is one player left on either team, the game will give an announcement. 
 
 This game is a spin-off of CA but ideally shouldn't be played in the same way. Different strategies and communication are required to win. 
@@ -13,22 +15,7 @@ When choosing maps for Xterm consider that if the map is too big or too small it
 
 If this game type is available on a server, you can change to it by voting `\cv custom xterm`
 
-##  CTF Elimination (CTFE)
-This is a cross between CTF and Elimination (CA). Two teams face each other on CTF maps for multiple rounds until one team gets 10 points. All players start with a decent stack and all the weapons. There are no items on the map other than the flags.
 
-The role of each team alternates between offense and defense for each round. The team on offense has to capture the flag and the team on defense has to defend their flag. This will be written in the top right corner on your HUD. For example: *"Red Team is on Offense"* etc.
-
-In order to win the round, the team on offense can either capture the flag *or* frag all of the enemy team. The team on defense only needs to frag all of the enemy team.
-
-Unlike regular CTF, you are unable to return the flag in this mode.
-
-Vote for this game type if it available with `\cv custom ctfe`
-
-## FFA with All Weapons (FFA_AW)
-
-This is a cross between Clan Arena and Free For All (Deathmatch). Players spawn with all weapons and a full stack of health and armor. There are no items on the map. In order to win you need to reach the frag limit *or* have the most points when the timer is up. 
-
-Vote for this game type if it available with `\cv custom ffa_aw`
 
 ## Treasure Hunter (TH)
 
@@ -48,6 +35,13 @@ A few special things to remember:
 - You cannot see the other team players but you can hear them.
 
 Vote for this game type if it available with `\cv custom th`
+
+
+## FFA with All Weapons (FFA_AW)
+
+This is a cross between Clan Arena and Free For All (Deathmatch). Players spawn with all weapons and a full stack of health and armor. There are no items on the map. In order to win you need to reach the frag limit *or* have the most points when the timer is up. 
+
+Vote for this game type if it available with `\cv custom ffa_aw`
 
 
 ## Duel with Equalized Ping (dueleq)

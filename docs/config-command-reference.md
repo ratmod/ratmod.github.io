@@ -308,10 +308,6 @@ Use treb's voice with `set cg_announcer "treb"` and if you only want treb's voic
 
 ## HUD
 
-### Switch between HUD styles
-- `\hud 1` command for a futuristic HUD
-- `\hud 0` command for a traditional HUD
-- `cg_drawHabarBackground 1` - a background for the health/armor bar in the futuristic HUD.
 
 ### Awards Display
 `set cg_drawRewards 1` will show the awards you get immediately, with different awards appearing side-by-side. The announcements will be played in rapid succession. Set this to `2` to use the old OA way of showing awards slowly one after another. Set it to `0` to disable showing awards.
@@ -331,6 +327,8 @@ The status bar shows your health, ammo, and armor amounts among other things. Us
 - `3` = minimalistic version
 - `4` = futuristic statusbar with health/armor bars in the center, ammo bar on the left. Also enables new powerup display
 - `5` = similar to 4, but vertically flipped
+
+`cg_drawHabarBackground 1` - gives a background for the health/armor bar in the futuristic HUD.
 
 ### Low or Empty Ammo Indicator
 - `set cg_drawAmmoWarning 1` will show you a low ammo warning
