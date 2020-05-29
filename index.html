@@ -61,6 +61,8 @@
         
             <li><a class="toctree-l3" href="#getting-started-with-ratmod">Getting Started with Ratmod</a></li>
         
+            <li><a class="toctree-l3" href="#the-team-queue-system">The Team Queue System</a></li>
+        
         </ul>
     
 
@@ -89,7 +91,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="tweaks.html">Perfomance Tweaking</a>
+    <a class="" href="tweaks.html">Perfomance Tweaks</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -146,6 +148,14 @@
 <p>To see custom votes available, type <code>\cv custom</code> in the game console. You can also use the vote menu (Esc -&gt; Call Vote -&gt; Custom Vote)</p>
 <p>If you're new to ratmod, please check out the <a href="config-command-reference.html#helpful-binds-and-commands">Helpful Binds and Commands</a>.</p>
 <p>For further customization, check out the <a href="config-command-reference.html">Config and Command Reference</a>.</p>
+<h2 id="the-team-queue-system">The Team Queue System</h2>
+<p>There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.</p>
+<p>This is not yet on by default <em>yet</em> and it is a vote: <code>\cv custom queues</code></p>
+<ul>
+<li>All people waiting in queue will be shown on the scoreboard with appropriately colored text.</li>
+<li>when a player for each team is available in the queue, they will join the game.</li>
+<li>If the teams become unequal because one or more of the players leave, then the server will equalize the player numbers. This will happen after a round is finished for round-based game types. The last player that joined a team is put in queue in this situation.</li>
+</ul>
               
             </div>
           </div>
@@ -194,5 +204,5 @@
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2020-05-29 05:09:08
+Build Date UTC : 2020-05-29 12:21:30
 -->

@@ -70,17 +70,11 @@
     <a class="current" href="callvote-reference.html">Callvote Reference</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#server-manual">Server Manual</a></li>
+    <li class="toctree-l2"><a href="#callvote-reference">Callvote Reference</a></li>
     
         <ul>
         
             <li><a class="toctree-l3" href="#available-votes-via-cv">Available Votes via \cv</a></li>
-        
-            <li><a class="toctree-l3" href="#available-game-modes-via-cv-custom">Available Game Modes via \cv custom</a></li>
-        
-            <li><a class="toctree-l3" href="#available-options-via-cv-custom">Available Options via \cv custom</a></li>
-        
-            <li><a class="toctree-l3" href="#the-team-queue-system">The Team Queue System</a></li>
         
         </ul>
     
@@ -95,7 +89,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="tweaks.html">Perfomance Tweaking</a>
+    <a class="" href="tweaks.html">Perfomance Tweaks</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -135,19 +129,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="server-manual">Server Manual</h1>
+                <h1 id="callvote-reference">Callvote Reference</h1>
 <p>Ratmod servers have a variety of callvotes to change game modes or turn on/off features.</p>
 <p>Some ratmod servers are limited to one game type. "Allmodes" and "Try Hard" servers have <em>all</em> game types built in. This makes it possible to have one server rather than a multitude.</p>
-<p>Any game mode or option switch is done with a callvote. Use the game console with these commands:</p>
+<p>Any game mode or option toggle is done with a callvote. Use the game console with these commands:</p>
 <ul>
 <li><code>\cv &lt;option&gt;</code> </li>
 <li><code>\cv custom &lt;mode or option&gt;</code></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Note</p>
-<p>Please note that not all game modes / options are available on all ratmod servers. The following is meant as a reference to what is available overall. </p>
+<p>Please note that not all game modes / options are available on all ratmod servers. </p>
 <p>If you want to see a list of available call votes on a server, use the <code>\cv</code> or <code>\cv custom</code> commands with no arguments.</p>
 </div>
+<p>Since custom votes are configured differently on any given server, please check in the server for custom votes with <code>\cv custom</code>. </p>
 <h2 id="available-votes-via-cv">Available Votes via <code>\cv</code></h2>
 <table>
 <thead>
@@ -211,246 +206,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="available-game-modes-via-cv-custom">Available Game Modes via <code>\cv custom</code></h2>
-<table>
-<thead>
-<tr>
-<th>Mode</th>
-<th>What it is:</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1fctf</td>
-<td><a href="https://openarena.fandom.com/wiki/One_Flag_Capture">One Flag CTF</a></td>
-</tr>
-<tr>
-<td>ca</td>
-<td><a href="https://openarena.fandom.com/wiki/Elimination">Clan Arena a.k.a Elimination</a></td>
-</tr>
-<tr>
-<td>ctf</td>
-<td><a href="https://openarena.fandom.com/wiki/Manual/Gamemodes#Capture_The_Flag_.28CTF.29">Capture the Flag</a></td>
-</tr>
-<tr>
-<td>ctfe</td>
-<td><a href="https://openarena.fandom.com/wiki/CTF_Elimination">Capture the Flag Elimination</a> (catch flag or frag enemy team for point)</td>
-</tr>
-<tr>
-<td>duel</td>
-<td><a href="https://openarena.fandom.com/wiki/Manual/Gamemodes#Tournament">Duel Mode</a> (1v1)</td>
-</tr>
-<tr>
-<td>dueleq</td>
-<td>Duel Mode with equal ping (for fairness)</td>
-</tr>
-<tr>
-<td>extendedca</td>
-<td>CA but with all weapons</td>
-</tr>
-<tr>
-<td>ffa</td>
-<td><a href="https://openarena.fandom.com/wiki/Manual/Gamemodes#Free_For_All">Free For All (Deathmatch)</a></td>
-</tr>
-<tr>
-<td>ffa_aw</td>
-<td>Free For All with all weapons.</td>
-</tr>
-<tr>
-<td>ictf</td>
-<td>Instagib Catch the Flag</td>
-</tr>
-<tr>
-<td>lms</td>
-<td><a href="https://openarena.fandom.com/wiki/Last_Man_Standing">Last Man Standing</a> (FFA version of Elimination)</td>
-</tr>
-<tr>
-<td>overload</td>
-<td><a href="https://openarena.fandom.com/wiki/Manual/Gamemodes#Overload">Overload</a> - destroy the other teams obelisk.</td>
-</tr>
-<tr>
-<td>tdm</td>
-<td><a href="https://openarena.fandom.com/wiki/Manual/Gamemodes#Team_Deathmatch">Team Death Match</a></td>
-</tr>
-<tr>
-<td>th</td>
-<td>Treasure Hunt</td>
-</tr>
-<tr>
-<td>xterm</td>
-<td>Extermination a.k.a. xterm</td>
-</tr>
-</tbody>
-</table>
-<h2 id="available-options-via-cv-custom">Available Options via <code>\cv custom</code></h2>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>What it does:</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>autolock</td>
-<td>?</td>
-</tr>
-<tr>
-<td>awardpushing</td>
-<td>Enable/Disable getting a point for pushing a player off the map or into lava etc.</td>
-</tr>
-<tr>
-<td>cup</td>
-<td>?</td>
-</tr>
-<tr>
-<td>fastrg</td>
-<td>?</td>
-</tr>
-<tr>
-<td>fastswitch</td>
-<td>Enable/Disable fast weapon switching (?describe more?).</td>
-</tr>
-<tr>
-<td>freerj</td>
-<td>Enable/Disable Free Rocket Jump (no self-damage when you rocket jump)</td>
-</tr>
-<tr>
-<td>friendlyfire</td>
-<td>Enable/Disable Friendly Fire (for team modes). In CTF it is off by default. In TDM it is on by default.</td>
-</tr>
-<tr>
-<td>friendswh</td>
-<td>?</td>
-</tr>
-<tr>
-<td>grapple</td>
-<td>Enable/Disable Grapple (if on it is always available)</td>
-</tr>
-<tr>
-<td>insta</td>
-<td>Enable/Disable Instagib for the current game mode</td>
-</tr>
-<tr>
-<td>inviswalls</td>
-<td>Enable/Disable Invisible walls (turns off map clipping). In TH this is on by default.</td>
-</tr>
-<tr>
-<td>kamikaze</td>
-<td>Enable kamikaze (?)</td>
-</tr>
-<tr>
-<td>midair</td>
-<td>?</td>
-</tr>
-<tr>
-<td>mute</td>
-<td>Mute the spectators.</td>
-</tr>
-<tr>
-<td>nokamikaze</td>
-<td>Disable kamikaze (?)</td>
-</tr>
-<tr>
-<td>nopowerups</td>
-<td>Disable powerups</td>
-</tr>
-<tr>
-<td>overtime</td>
-<td>?</td>
-</tr>
-<tr>
-<td>powerups</td>
-<td>Enable powerups</td>
-</tr>
-<tr>
-<td>railjump</td>
-<td>Enable/Disable Rail jump (like rocket jump, with rail)</td>
-</tr>
-<tr>
-<td>rampjump</td>
-<td>Enable/Disable Ramp jump</td>
-</tr>
-<tr>
-<td>ratmode</td>
-<td>Enable/Disable rat mode. Different CPMA like physics.</td>
-</tr>
-<tr>
-<td>ready</td>
-<td>Enable/Disable the Ready system. By default it is off.</td>
-</tr>
-<tr>
-<td>rockets</td>
-<td>Enable/Disable Only rockets for current game mode</td>
-</tr>
-<tr>
-<td>skinsbright</td>
-<td>Force all players to see bright skins</td>
-</tr>
-<tr>
-<td>skinsnormal</td>
-<td>Force all players to see normal skins</td>
-</tr>
-<tr>
-<td>skinsoutline</td>
-<td>Force all players to see outline skins</td>
-</tr>
-<tr>
-<td>smoothjump</td>
-<td>?</td>
-</tr>
-<tr>
-<td>taunts</td>
-<td>Enable/Disable special taunts.</td>
-</tr>
-<tr>
-<td>telemissiles</td>
-<td>Enable/Disable projectiles going through the teleport. On by default.</td>
-</tr>
-<tr>
-<td>throughwalls</td>
-<td>Enable/Disable damage through walls and floors.</td>
-</tr>
-<tr>
-<td>unmute</td>
-<td>Unmute the spectators.</td>
-</tr>
-<tr>
-<td>vampire</td>
-<td>Enable/Disable vampire mode. - description?</td>
-</tr>
-</tbody>
-</table>
-<h2 id="the-team-queue-system">The Team Queue System</h2>
-<p>There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.</p>
-<p>This is not yet on by default and it is a vote: <code>\cv custom queues</code></p>
-<ul>
-<li>All people waiting in queue will be shown on the scoreboard. Red "queue" text means the player is waiting to join the red team. Blue text for blue team. White text is for those who auto-joined.</li>
-<li>All people waiting in queue will be spectating the game and will have a message on their screen "Waiting to join team (red/blue)</li>
-</ul>
-<h3 id="joining-games">Joining Games</h3>
-<p>When the queue system is turned on, this is how it handles a few common situations:</p>
-<h4 id="situation-a-player-wants-to-be-ready-to-play">Situation: A player wants to be ready to play...</h4>
-<p>A good way to indicate that you want to play is just to join. Other spectators can then see on the scoreboard that you want to play and which team you want to join. As soon as someone else joins the opposite team or auto-join, you will enter the game.</p>
-<h4 id="situation-spectators-want-to-join-the-game">Situation: spectators want to join the game...</h4>
-<ul>
-<li>If someone from spectators tries to join a team, they will go into the queue.</li>
-<li>For example, Player A joins red and is in queue for red. When Player B joins blue, they will both be added to the game. </li>
-<li>If Player B accidentally joins red, both players will be in the queue for the red team. Without the queue system, both players would be on team red and team red would win!</li>
-</ul>
-<h3 id="balancing">Balancing</h3>
-<p>In addition to the queues, the vote also enables a re-balancing system that makes sure the teams have equal numbers of players even if players leave during the game:</p>
-<h4 id="situation-a-player-leaves-a-team">Situation: A player leaves a team...</h4>
-<ul>
-<li>If the teams become unequal because one or more of the players leave, then the game will equalize the player numbers. The server will wait for a few moments before taking action. </li>
-<li>In XTERM/CA this balancing will happen after the current round is finished. In CTF it will happen after a few moments. The server will also display messages in the console and on the screen that this will happen.</li>
-<li>Who is put into the queue? The last player who joined will be put back into his team's queue. In the case that all players joined at the same time it will be the one with the lowest score.</li>
-</ul>
-<h4 id="situation-two-players-want-to-switch-teams">Situation: Two players want to switch teams</h4>
-<ul>
-<li>The queue system makes it easier to handle players switching to opposite teams. </li>
-<li>Player A switches from blue to red and will be in the red queue. If someone doesn't switch very soon from red to blue, the server will equalize the number of players - moving a red player to the queue.</li>
-</ul>
               
             </div>
           </div>
