@@ -418,7 +418,7 @@ p, ul, ol, blockquote, pre {
 pre > code {
   background-color: #444 !important;
   color: #ddd !important;
-  font-size: 0.95em !important;
+  font-size: 1em !important;
   font-weight: 200 !important
 
 }
