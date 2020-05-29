@@ -47,7 +47,7 @@ Lastly, you can use vertex lighting. This should probably be the last option you
 
 	r_vertexLight 1	
 
-## Mod-specific tweaks
+## Mod-specific Tweaks
 
 There are are also certain mod settings that can have an affect on performance. This is especially true with settings that create a lot of individual rendering entities.
 
