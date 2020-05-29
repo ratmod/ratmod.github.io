@@ -114,7 +114,7 @@ Check the [Ping Icon Cusomization](#ping-icon-customization) section for customi
 
 This is the screen that pops up with `\mv`:
 
-![mv screen](images/screenshots/mv-screenshot.svg)
+![mv screen](images/screenshots/mv-screenshot.png)
 
 #### List all available votes
 - `\callvote`
@@ -157,7 +157,7 @@ This is the screen that pops up with `\mv`:
 
 Ratmod has a zoomscope available for machine gun and rail gun. To enable them use `set cg_drawZoomScope 1`. 
 
-![zoom scope](images/screenshots/zoomscope.svg)
+![zoom scope](images/screenshots/zoomscope.png)
 
 There are a few settings available to alter the appearance of the scopes:
 
@@ -181,7 +181,7 @@ Sarge and smarine each have a "gray" skin for brightshell and brightoutline over
 - `set cg_teamModel sarge/gray` for your team
 - `set cg_enemyModel smarine/gray` for the enemy
 
-![sarge/gray models](images/screenshots/sarge-gray-models.svg)
+![sarge/gray models](images/screenshots/sarge-gray-models.png)
 
 Alternatively, the "bright" skins are available for better performance (but don't look as good).
 
