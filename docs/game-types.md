@@ -44,7 +44,7 @@ Vote for this game type if it available with `\cv custom th`
 There is a multi-tournament/duel mode available for ratmod. The usual tournament mode only allows for one 1v1 match at a time. multi-tournament allows for multiple matches to happen simultaneously.
 
 - All matches start and stop at the same time. Overtime can happen as well if needed.
-- After a match is finished, the server automatically pairs players together randomly for the next match.
+- After a match is finished, the server automatically pairs players together based on their win/loss ratios so that better players play against better players.
 - See all the matches on the scoreboard in different arenas.
-- If you are spectating, you can switch to different arenas with the command `\game <1-5>`.
+- If you are spectating, you can switch to different arenas with the command `\game <0-5>`.
 - Get in queue for the next match with `\team q`
