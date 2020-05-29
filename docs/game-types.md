@@ -37,15 +37,14 @@ A few special things to remember:
 Vote for this game type if it available with `\cv custom th`
 
 
-## FFA with All Weapons (FFA_AW)
-
-This is a cross between Clan Arena and Free For All (Deathmatch). Players spawn with all weapons and a full stack of health and armor. There are no items on the map. In order to win you need to reach the frag limit *or* have the most points when the timer is up. 
-
-Vote for this game type if it available with `\cv custom ffa_aw`
 
 
-## Duel with Equalized Ping (dueleq)
+## Multi-tournemant (Duel)
 
-To be fair with pings use this mode for duel. 
+There is a multi-tournament/duel mode available for ratmod. The usual tournament mode only allows for one 1v1 match at a time. multi-tournament allows for multiple matches to happen simultaneously.
 
-Vote for this game type if it available with `\cv custom dueleq`
+- All matches start and stop at the same time. Overtime can happen as well if needed.
+- After a match is finished, the server automatically pairs players together randomly for the next match.
+- See all the matches on the scoreboard in different arenas.
+- If you are spectating, you can switch to different arenas with the command `\game <1-5>`.
+- Get in queue for the next match with `\team q`
