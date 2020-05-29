@@ -411,3 +411,21 @@ body, p, ul, ol, li, b, i {
 p, ul, ol, blockquote, pre {
   margin-left: 1rem;
 }
+
+
+/* for pre> code */
+
+pre > code {
+  background-color: #444 !important;
+  color: #ddd !important;
+  font-size: 0.95em !important;
+  font-weight: 200 !important
+
+}
+
+.hljs > span {
+  color: #ddd !important;
+  text-decoration: none !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+}
