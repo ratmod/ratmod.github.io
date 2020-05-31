@@ -32,3 +32,7 @@ Use `cg_ratstatusbar` with a value of:
 ### How do I turn off taunts?
 
 You can vote to toggle it off or on with `\cv custom taunts`.
+
+### Why isn't `r_picmip` working?
+
+This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.
