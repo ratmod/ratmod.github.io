@@ -2,7 +2,7 @@
 
 # Ratmod - by the rats, for the rats
 
-This is documentation for a mod for for [Open Arena (OA)](http://www.openarena.ws) - a Quake 3 Arena clone. 
+This is documentation for ratmod - a mod for [Open Arena (OA)](http://www.openarena.ws) which is a Quake 3 Arena clone. 
 
 Navigate to different pages using the navigation links.
 
