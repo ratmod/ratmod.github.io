@@ -1,4 +1,4 @@
-site_name: ratmod
+site_name: ratmod documentation
 theme:
   name: readthedocs
   custom_dir: docs/theme
@@ -7,7 +7,7 @@ extra_css:
     - theme/theme.css
 markdown_extensions:
   - admonition
-site_description: by the rats, for the rats
+site_description: ratmod documentation for openarena afps mod (docs)
 use_directory_urls: false
 nav:
   - Ratmod: index.md
