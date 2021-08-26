@@ -437,6 +437,7 @@ It is not covered here, but it is very important to adjust certain settings in o
 
 ### Team / CTF Settings
 - `set cg_drawFriend 1` - draws arrows over your teammates (can see them through walls). This is useful for seeing your teammates status from a distance without needing to read any numbers. The location arrows change color depending on health amount.
+- Friend indicators are added to the HUD if the friend is off-screen. Can be turned off with `cg_friendHudMarker 0`. There are also a number of settings to scale it differently, set a maximum/minimum scale or disable it at a particular distance (in console do `cg_friendHudMarker<TAB>`). *This feature is still experimental and might change in the future.*
 - `set cg_friendFloatHealth 1` - *deprecated* shows health above friends heads if friend indicators through walls is not on.
 - `set cg_friendFloatHealthSize 10` - *deprecated* change the size for the above
 
