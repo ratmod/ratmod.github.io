@@ -80,6 +80,8 @@
         
             <li><a class="toctree-l3" href="#consolechat">Console/Chat</a></li>
         
+            <li><a class="toctree-l3" href="#recording-demos">Recording Demos</a></li>
+        
             <li><a class="toctree-l3" href="#advanced">Advanced</a></li>
         
             <li><a class="toctree-l3" href="#cheat-protected-cvars">Cheat Protected CVARS</a></li>
@@ -203,6 +205,7 @@
 <ul>
 <li><code>\followauto</code> Automatically cycle spectating through players. It also switches to flag carriers automatically in CTF.</li>
 <li><code>\game &lt;1-5&gt;</code> select which game to watch. This only works for multi-tournament server while you are in spectator mode.</li>
+<li>In the multi-tournament server, <code>\specgame [game-id]</code> can be used to limit spectating and cycling of players to one particular match. <code>\specgame</code> resets the behavior to cycle through all players of all matches. This feature is useful especially for those casting or streaming games.</li>
 </ul>
 <h4 id="calling-for-timeout">Calling for timeout:</h4>
 <ul>
@@ -336,6 +339,10 @@
 <div class="admonition info">
 <p class="admonition-title">Note</p>
 <p>Forcing colors only works when the server configuration allows it. These colors apply when <code>cg_teamModel</code> or <code>cg_enemyModel</code> are set to a bright model (smarine/bright or sarge/bright) or when brightshells are enabled.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Note about Grenade Colors</p>
+<p>If forcing colors is enabled, grenades will also be colored based on team/enemy colors (only for team gametypes).</p>
 </div>
 <p>There are three ways to specify a color:</p>
 <ul>
@@ -658,6 +665,10 @@
 <li><code>set cg_newFont 1</code> - set to <code>0</code> for old font</li>
 <li><code>set cg_fontShadow 1</code> - drop shadow behind console/chat text to increase readability</li>
 <li><code>set cg_fontScale 1.1</code> - anything greater than 1.0 increases console/chat font sizes</li>
+</ul>
+<h2 id="recording-demos">Recording Demos</h2>
+<ul>
+<li><code>cg_autorecord 1</code> is the equivalent of <code>cl_autorecorddemo 1</code> but it is limited to start and stop when the match starts and stops.</li>
 </ul>
 <h2 id="advanced">Advanced</h2>
 <p><code>set cg_projectileNudgeAuto 1</code> - this will automatically set projectilenudge based on your ping. This helps to dodge rockets as the behavior is the same regardless of ping. If it is set to <code>0</code>, the rockets might lag behind, with the result being that you might avoid touching a rocket and still get hit. </p>
