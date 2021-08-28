@@ -59,6 +59,7 @@ There are several commands that provide utilities or actions for gameplay.
 #### Spectator commands:
 - `\followauto` Automatically cycle spectating through players. It also switches to flag carriers automatically in CTF.
 - `\game <1-5>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
+- In the multi-tournament server, `\specgame [game-id]` can be used to limit spectating and cycling of players to one particular match. `\specgame` resets the behavior to cycle through all players of all matches. This feature is useful especially for those casting or streaming games.
 
 #### Calling for timeout:
 - `bind PAUSE pause`
@@ -211,6 +212,10 @@ If you wish to see your team mate's own models, you must set `cg_teamModel` to a
 !!! Info "Note"
     Forcing colors only works when the server configuration allows it. These colors apply when `cg_teamModel` or `cg_enemyModel` are set to a bright model (smarine/bright or sarge/bright) or when brightshells are enabled.
 
+
+!!! Info "Note about Grenade Colors"
+    If forcing colors is enabled, grenades will also be colored based on team/enemy colors (only for team gametypes).
+
 There are three ways to specify a color:
 
 - **Color names**: "red", "orange", "yellow", "green", "cyan", "blue", "pink" and "white". 
@@ -227,7 +232,6 @@ Note: if you do not force your team color, then default team hues are used. This
 - `set cg_teamHueRed 0`
 - `set cg_teamHueDefault 125`
 - `set cg_teamHueBlue 210`
-
 
 The following will, if set, override `cg_enemyColor`/`cg_teamColor` for the respective body parts:
 
@@ -551,6 +555,10 @@ There are different visual styles of rockets available. Set it with `cg_rocketst
 - `set cg_newFont 1` - set to `0` for old font
 - `set cg_fontShadow 1` - drop shadow behind console/chat text to increase readability
 - `set cg_fontScale 1.1` - anything greater than 1.0 increases console/chat font sizes
+
+## Recording Demos
+
+- `cg_autorecord 1` is the equivalent of `cl_autorecorddemo 1` but it is limited to start and stop when the match starts and stops.
 
 
 ## Advanced
