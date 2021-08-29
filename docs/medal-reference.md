@@ -31,7 +31,7 @@ Medal Icon | Description
 ![](images/medals/medal_telefrag.png) | **Telefrag**<br>Teleport into another players personal space and kill them.
 ![](images/medals/medal_teleprojectile.png) | **Interdimensional**<br>Frag an opponent through the teleporter with any projectile.
 ![](images/medals/medal_revenge.png) | **Revenge**<br>Awarded for fragging the opponent that killed you quickly after you respawn.
-![](images/medals/medal_butcher.png) | **Butcher**<br>Awarded for gibbing 10 corpses using the gauntlet.
+![](images/medals/medal_butcher.png) | **Butcher**<br>Awarded for gibbing a corpse using the gauntlet.
 ![](images/medals/medal_vaporized.png) | **Vaporized**<br>Frag an opponent by doing more than 100 plasma damage within 800ms.
 ![](images/medals/medal_killspree10.png) | **Killing Spree**<br>Awarded for a killing spree of 5.
 ![](images/medals/medal_killspree20.png) | **Rampage**<br>Awarded for a killing spree of 10.
