@@ -2,7 +2,9 @@
 
 # Ratmod - by the rats, for the rats
 
-This is documentation for ratmod - a mod for [Open Arena (OA)](http://www.openarena.ws) which is a Quake 3 Arena clone. 
+This is documentation for ratmod - an open source mod for [Open Arena (OA)](http://www.openarena.ws) which is a Quake 3 Arena clone. 
+
+You can find the source code for the mod [hosted on github.com](https://github.com/rdntcntrl/ratoa_gamecode).
 
 Navigate to different pages using the navigation links.
 
