@@ -91,6 +91,8 @@
         
             <li><a class="toctree-l3" href="#what-engines-are-compatible-with-ratmod">What Engines are compatible with Ratmod?</a></li>
         
+            <li><a class="toctree-l3" href="#how-do-i-launch-ioquake3-engine">How do I launch ioquake3 Engine?</a></li>
+        
             <li><a class="toctree-l3" href="#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</a></li>
         
             <li><a class="toctree-l3" href="#can-i-copy-my-config-from-insert-other-modgame62-here">Can I copy my config from &lt;insert other mod/game> here?</a></li>
@@ -143,11 +145,27 @@
 <h3 id="what-engines-are-compatible-with-ratmod">What Engines are compatible with Ratmod?</h3>
 <p>Since ioquake3 is open source there are several options. These are known to work well:</p>
 <ul>
-<li><a href="https://github.com/ioquake/ioq3">ioquake3</a>. If you are compiling ioquake3 on your own, make sure to do so with Ogg Vorbis support. Using ioquake3 engine will require you to set up a folder with the baseoa pk3s and launch the engine with the following (for linux): <code>path/to/ioq3 +set com_basegame "baseoa" +set com_legacyprotocol 71 +set com_protocol 71 +set sv_master1 dpmaster.deathmask.net +set fs_basepath "path/to/parent/folder/of/baseoa/pk3/folder" +set fs_homepath "/path/to/username/.openarena"</code></li>
+<li><a href="https://github.com/ioquake/ioq3">ioquake3</a>. If you are compiling ioquake3 on your own, make sure to do so with Ogg Vorbis support. See <a href="#how-do-i-launch-ioquake3-engine">below</a> for details about how to launch the engine.</li>
 <li><a href="http://openarena.ws/download.php">openarena engine</a> (ioquake3+oa) (this is outdated). This is also available in various Linux distributions.</li>
 <li><a href="http://www.h4l-group.de/pub/Q3_engines/fX3/client/for_OA/">fx3</a></li>
 </ul>
 <p>It is not recommended to use <strong>yuengine</strong>. This engine is known to produce audio and visual bugs with ratmod.</p>
+<h3 id="how-do-i-launch-ioquake3-engine">How do I launch ioquake3 Engine?</h3>
+<p>The examples below also have the necessary arguments for increasing memory for the game.</p>
+<h4 id="for-linux">For Linux</h4>
+<p>Using ioquake3 engine will require you to set up a folder with the baseoa pk3s and launch the engine with the following (for linux): </p>
+<p><code>path/to/ioq3 +set com_basegame "baseoa" +set com_legacyprotocol 71 +set com_protocol 71 +set sv_master1 dpmaster.deathmask.net +set com_hunkMegs 256 +set com_zoneMegs 64 +set com_soundMegs 32 +set fs_basepath "path/to/parent/folder/of/baseoa/pk3/folder" +set fs_homepath "/path/to/username/.openarena"</code></p>
+<h4 id="for-windows">For Windows</h4>
+<p>Launch with the following:</p>
+<p><code>path/to/ioq3 +set com_basegame "baseoa" +set com_legacyprotocol 71 +set com_protocol 71 +set sv_master1 dpmaster.deathmask.net +set com_hunkMegs 256 +set com_zoneMegs 64 +set com_soundMegs 32 +set fs_basepath "path/to/parent/folder/of/baseoa/pk3/folder" +set fs_homepath OpenArena</code></p>
+<div class="admonition info">
+<p class="admonition-title">About com_homepath</p>
+<p><code>com_homepath</code> will be the path that contains the configs/downloaded maps/mods.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Regarding OpenGL2</p>
+<p><strong>ioquake3</strong> has an opengl2 based renderer (on by default) that might cause performance issues. You can switch to <code>opengl1</code> by setting <code>\cl_renderer opengl1</code>. </p>
+</div>
 <h3 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h3>
 <p>Forcing colors only works when the server configuration allows it.</p>
 <h3 id="can-i-copy-my-config-from-insert-other-modgame62-here">Can I copy my config from &lt;insert other mod/game> here?</h3>
