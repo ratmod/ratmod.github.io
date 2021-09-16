@@ -414,6 +414,8 @@ The timer is important and shows you the time since the match started:
 - `set cg_drawTimer 1` - enables the timer (it is off by default).
 - `set cg_timerPosition 0` - places the timer on the top right
 - `set cg_timerPosition 1` - places the timer in the top middle
+- `set cg_timerPosition 2` - places the timer below the crosshair
+- `set cg_timerPosition 3` - places the timer above the crosshair
 - `set cg_timerScale <value>` - use this to change the size of the timer (1.2 will be bigger)
 - `set cg_timerAlpha <value>` - can be used to change the transparency (0.0-1.0) 
 
