@@ -11,6 +11,7 @@ If you have any feedback or an issue, feel free to create an issue in the reposi
 ## Build
 
 If you are building this documentation it is done with mkdocs. You can install the necessary theme into a python venv:
+
 	mkdir env
 	python3 -m venv env
 	source env/bin/activate
@@ -21,6 +22,7 @@ Then simply:
 	mkdocs build
 
 or:
+
 	mkdocs serve
 
 ### Deploy
