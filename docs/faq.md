@@ -26,7 +26,7 @@ Using ioquake3 engine will require you to set up a folder with the baseoa pk3s a
 		 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 \
 		 +set cl_renderer opengl1
 
-If you wish to start ratmod directly, you can add`+set fs_game rat` at the end of the command.
+If you wish to start ratmod directly, you can add `+set fs_game rat` at the end of the command.
 
 !!! Info "About `fs_basepath`"
     `fs_basepath` should point to the OpenArena installation directory, which should contain a subdirectory called `baseoa` containing `pak0.pk3` (as well as others).
