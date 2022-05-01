@@ -1,5 +1,7 @@
 site_name: ratmod docs
-theme: slate
+theme:
+  name: slate
+  highlightjs: false
 extra_css:
   - theme/theme.css
 markdown_extensions:
