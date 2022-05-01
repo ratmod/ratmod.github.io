@@ -76,7 +76,8 @@ Use `cg_ratstatusbar` with a value of:
 
 ## How do I turn off taunts?
 
-You can vote to toggle it off or on with `\cv custom taunts`.
+You can disable taunts with `\cg_taunts 0`. Note that this will only work if the server doesn't force taunts to be on. You can check using `\rules`.
+You may also be able to vote to toggle taunts off or on for everyone with `\cv custom taunts`.
 
 ## Why isn't `r_picmip` working?
 

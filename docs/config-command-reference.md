@@ -38,7 +38,7 @@ There are several commands that provide utilities or actions for gameplay.
 #### Print a link to the documentation
 - `\doc`
 
-#### Show the physics rules for the current server
+#### Show the rules / game configuration for the current server
 - `\rules`
 
 
@@ -55,11 +55,12 @@ There are several commands that provide utilities or actions for gameplay.
 - `\team q` = queue (for duel gametype or when the queue system is on)
 - `\team n` = notready (queued in duel, but not selected for next game)
 - `\team a` = afk (away from keyboard)
+- `\team [game-id]` = join a specific multitournament game
 
 #### Spectator commands:
 - `\followauto` Automatically cycle spectating through players. It also switches to flag carriers automatically in CTF.
-- `\game <1-5>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
 - In the multi-tournament server, `\specgame [game-id]` can be used to limit spectating and cycling of players to one particular match. `\specgame` resets the behavior to cycle through all players of all matches. This feature is useful especially for those casting or streaming games.
+- `\game <1-5>` select which game to watch. This only works for multi-tournament server while you are in spectator mode.
 
 #### Calling for timeout:
 - `bind PAUSE pause`
@@ -69,7 +70,7 @@ There are several commands that provide utilities or actions for gameplay.
 
 #### Drop the currently held item
 - Example: `bind m drop`
-- If this is enabled by the server you will drop flags, weapons or ammo.
+- If this is enabled by the server you will drop flags, powerups or weapons.
 
 #### Displaying and Playing Taunts
 - `\taunt` will print a list of all taunts
@@ -299,15 +300,19 @@ Ratmod has a new set of vocal announcements. You can switch back to the original
 
 Use treb's voice with `set cg_announcer "treb"` and if you only want treb's voice for the new awards use `set cg_announcer ""` and `set cg_announcerNewAwards "treb"`.
 
+### Weapons
+
+- `set cg_rgSound 1-2` - Select railgun soundpack.
+- `set cg_lgSound 1-3` - Select lightning gun soundpack.
+
 
 
 ### Other Sound Settings
-- `set cg_teamChatBeep 1` - Toggle the chat beeps from your team. These are from any team you are on (red, blue, or spectator)
-- `set cg_chatBeep 1` - Toggle chat beep sounds on or off
+- `set cg_teamChatBeep 2` - Select the chat beeps from your team. These are from any team you are on (red, blue, or spectator). `0` will disable it.
+- `set cg_chatBeep 2` - Select the chat beep sound. `0` will disable it.
 - `set cg_music 0` - Toggle music on or off
 - `set cg_hitsound 1`- Toggle wether or not hit sounds are played when you hit an enemy with your weapon. 
-
-
+- `set cg_taunts 0`- Disable taunts (can be overriden by the server, see `\rules`).
 
 ## HUD
 
@@ -553,6 +558,8 @@ There are different visual styles of rockets available. Set it with `cg_rocketst
 
 ## Console/Chat
 
+- `set cg_chat 0` - Hide all chats. Intended for streamers.
+- `set cg_teamChatsOnly 1` - Only show team chats
 - `set cg_newConsole 1` - set this to `0` if you want to have the console messages printed by ioq3 again.
 - `set cg_newFont 1` - set to `0` for old font
 - `set cg_fontShadow 1` - drop shadow behind console/chat text to increase readability
