@@ -10,3 +10,7 @@ code {color: #4EC487; background-color: #444444; border:none;}
 footer > p {display:none;}
 
 .bg-secondary {background-color: #333333 !important; border:none;}
+
+a {color: rgb(6, 148, 170);}
+.bg-secondary a {color: inherit;}
+
