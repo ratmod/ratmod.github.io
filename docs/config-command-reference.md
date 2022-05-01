@@ -551,9 +551,14 @@ There are different visual styles of rockets available. Set it with `cg_rocketst
 - `cg_quadAlpha` - change the transparancy for the quad damage shell
 - `cg_quadStyle` - set a different style for the shell
 
+### Weapons
+- `set cg_drawGun 1` - show weapon model. Set to `2` or `3` to change the position to left or center.
+- `cg_gunX`, `cg_gunY`, `cg_gunZ` - adjust weapon position
+- `set cg_bobGun 1` - enable weapon bobbing
+- `set cg_oldMachinegun 1` - use the old machinegun model
+
 ### Other
 - `set cg_drawSpawnpoints 1` - show spawnpoints during warmup
-- `set cg_oldMachinegun 1` - use the old machinegun model
 
 
 ## Console/Chat
