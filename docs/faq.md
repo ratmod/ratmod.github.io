@@ -1,6 +1,6 @@
 # FAQ
 
-### What Engines are compatible with Ratmod?
+## What Engines are compatible with Ratmod?
 
 Since ioquake3 is open source there are several options. These are known to work well:
 
@@ -11,11 +11,11 @@ Since ioquake3 is open source there are several options. These are known to work
 
 It is not recommended to use **yuengine**. This engine is known to produce audio and visual bugs with ratmod.
 
-### How do I launch ioquake3 Engine?
+## How do I launch ioquake3 Engine?
 
 The examples below also have the necessary arguments for increasing memory for the game.
 
-#### For Linux
+### For Linux
 
 Using ioquake3 engine will require you to set up a folder with the baseoa pk3s and launch the engine with the following (for linux): 
 
@@ -46,7 +46,7 @@ If you wish to start ratmod directly, you can add`+set fs_game rat` at the end o
     **ioquake3** has an opengl2 based renderer (on by default) that might cause performance issues. You can switch to `opengl1` by setting `\cl_renderer opengl1`. 
 
 
-#### For Windows
+### For Windows
 
 The options are generally the same as for Linux, but `com_homepath` should be set to OpenArena instead.
 
@@ -55,11 +55,11 @@ Launch with the following:
 	ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
 
 
-### Why don't brightskins/shells/outlines show up even though I configured them?
+## Why don't brightskins/shells/outlines show up even though I configured them?
 
 Forcing colors only works when the server configuration allows it.
 
-### Can I copy my config from <insert other mod/game\> here?
+## Can I copy my config from <insert other mod/game\> here?
 
 While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but *don't* try to copy q3config.cfg between different mods.
 
@@ -74,11 +74,11 @@ Use `cg_ratstatusbar` with a value of:
 - `4` = futuristic statusbar with health/armor bars in the center, ammo bar on the left. Also enables new powerup display
 - `5` = similar to 4, but vertically flipped
 
-### How do I turn off taunts?
+## How do I turn off taunts?
 
 You can vote to toggle it off or on with `\cv custom taunts`.
 
-### Why isn't `r_picmip` working?
+## Why isn't `r_picmip` working?
 
 This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.
 

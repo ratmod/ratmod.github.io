@@ -1,4 +1,6 @@
-# Source Code
+# Downloads
+
+## Source Code
 
 You can find the source code for the mod [hosted on github.com](https://github.com/rdntcntrl/ratoa_gamecode).
 
