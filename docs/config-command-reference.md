@@ -445,6 +445,10 @@ It is not covered here, but it is very important to adjust certain settings in o
 - `set cg_crosshairPulse 1` - the crosshair will pulse when you pick up an item
 - `cg_pickupScale` - change scale of the item pick up indicator
 
+#### Weapon Damage
+- `set cg_damagePlums 1` - show the damage you are dealing to opponents
+- `set cg_damagePlums 2` - same, but exclude damage from weapons like lightning- and machinegun for which showing the damage is of limited usefulness and may be visually disruptive
+
 
 ### Team / CTF Settings
 - `set cg_drawFriend 1` - draws arrows over your teammates (can see them through walls). This is useful for seeing your teammates status from a distance without needing to read any numbers. The location arrows change color depending on health amount.
