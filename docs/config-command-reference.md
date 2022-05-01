@@ -448,6 +448,7 @@ It is not covered here, but it is very important to adjust certain settings in o
 #### Weapon Damage
 - `set cg_damagePlums 1` - show the damage you are dealing to opponents
 - `set cg_damagePlums 2` - same, but exclude damage from weapons like lightning- and machinegun for which showing the damage is of limited usefulness and may be visually disruptive
+- `set cg_damageSize 8.0` - adjust size of the damage plums
 
 
 ### Team / CTF Settings
