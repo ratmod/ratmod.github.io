@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>FAQ - ratmod docs</title>
+        <title>Getting Started - ratmod docs</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
@@ -37,12 +37,12 @@
                             <li class="navitem">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="getting-started.html" class="dropdown-item">Getting Started</a>
+    <a href="getting-started.html" class="dropdown-item active">Getting Started</a>
 </li>
                                     
 <li>
@@ -66,7 +66,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem active">
+                            <li class="navitem">
                                 <a href="faq.html" class="nav-link">FAQ</a>
                             </li>
                             <li class="navitem">
@@ -81,12 +81,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="tweaks.html" class="nav-link">
+                                <a rel="prev" href="index.html" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="downloads.html" class="nav-link">
+                                <a rel="next" href="config-command-reference.html" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -108,32 +108,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#faq" class="nav-link">FAQ</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#what-engines-are-compatible-with-ratmod" class="nav-link">What Engines are compatible with Ratmod?</a>
+            <li class="nav-item" data-level="2"><a href="#getting-started-with-ratmod" class="nav-link">Getting Started with Ratmod</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#how-do-i-launch-ioquake3-engine" class="nav-link">How do I launch ioquake3 Engine?</a>
+            
+            <li class="nav-item" data-level="2"><a href="#the-team-queue-system" class="nav-link">The Team Queue System</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them" class="nav-link">Why don't brightskins/shells/outlines show up even though I configured them?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#can-i-copy-my-config-from-insert-other-modgame-here" class="nav-link">Can I copy my config from &lt;insert other mod/game> here?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#how-do-i-turn-off-taunts" class="nav-link">How do I turn off taunts?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#why-isnt-r_picmip-working" class="nav-link">Why isn't r_picmip working?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -141,71 +122,27 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="faq">FAQ</h1>
-<h2 id="what-engines-are-compatible-with-ratmod">What Engines are compatible with Ratmod?</h2>
-<p>Since ioquake3 is open source there are several options. These are known to work well:</p>
+<h2 id="getting-started-with-ratmod">Getting Started with Ratmod</h2>
+<p>Ratmod is all set up for you with great defaults. Make sure that auto-download is on and when you go on a Ratmod server everything will be set for you. </p>
+<p>To make an enemy model green and team model pink:</p>
 <ul>
-<li><a href="https://github.com/ioquake/ioq3">ioquake3</a>. If you are compiling ioquake3 on your own, make sure to do so with Ogg Vorbis support. See <a href="#how-do-i-launch-ioquake3-engine">below</a> for details about how to launch the engine.</li>
-<li><a href="https://github.com/OpenArena-Ioq3/openarena-ioq3">openarena-ioq3</a>. This is a fork of ioquake3 that is pre-configured for OpenArena and keeps up to date with the ioq3 master.</li>
-<li><a href="http://openarena.ws/download.php">openarena engine</a> (ioquake3+oa) (this is outdated). This is also available in various Linux distributions.</li>
-<li><a href="http://www.h4l-group.de/pub/Q3_engines/fX3/client/for_OA/">fx3</a></li>
+<li><code>\cg_enemyColor green</code></li>
+<li><code>\cg_teamColor pink</code></li>
 </ul>
-<p>It is not recommended to use <strong>yuengine</strong>. This engine is known to produce audio and visual bugs with ratmod.</p>
-<h2 id="how-do-i-launch-ioquake3-engine">How do I launch ioquake3 Engine?</h2>
-<p>The examples below also have the necessary arguments for increasing memory for the game.</p>
-<h3 id="for-linux">For Linux</h3>
-<p>Using ioquake3 engine will require you to set up a folder with the baseoa pk3s and launch the engine with the following (for linux): </p>
-<pre><code>ioquake3 +set fs_basepath "path/to/openarena/installation" \
-     +set com_homepath .openarena +set com_basegame baseoa \
-     +set com_legacyprotocol 71 +set com_protocol 72 \
-     +set sv_master1 dpmaster.deathmask.net +set cl_motd 0 \
-     +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 \
-     +set cl_renderer opengl1
-</code></pre>
-<p>If you wish to start ratmod directly, you can add <code>+set fs_game rat</code> at the end of the command.</p>
-<div class="admonition info">
-<p class="admonition-title">About <code>fs_basepath</code></p>
-<p><code>fs_basepath</code> should point to the OpenArena installation directory, which should contain a subdirectory called <code>baseoa</code> containing <code>pak0.pk3</code> (as well as others).</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">About <code>com_homepath</code></p>
-<p><code>com_homepath</code> will be the path that contains the configs/downloaded maps/mods. It is relative to the user's home directory.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">About <code>com_protocol</code> and <code>com_legacyprotocol</code></p>
-<p>In OpenArena, protocol 71 refers to the legacy quake3 protocol, which confusingly is referred to as protocol 68 by quake3.
-ioquake3 supports a newer protocol, which has UDP spoofing protection and VoIP support. In order to make ioq3 compatible 
-with games that use different numbers for these protocols, the <code>com_protocol</code> and <code>com_legacyprotocol</code> cvars were added.
-Setting <code>com_protocol 72</code> and <code>com_legacyprotocol 71</code> allows your client to use the newer protocol if the server supports it.
-See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocols">explanation of network protocols on the ioquake3 website</a>.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Regarding OpenGL2</p>
-<p><strong>ioquake3</strong> has an opengl2 based renderer (on by default) that might cause performance issues. You can switch to <code>opengl1</code> by setting <code>\cl_renderer opengl1</code>. </p>
-</div>
-<h3 id="for-windows">For Windows</h3>
-<p>The options are generally the same as for Linux, but <code>com_homepath</code> should be set to OpenArena instead.</p>
-<p>Launch with the following:</p>
-<pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
-</code></pre>
-<h2 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h2>
-<p>Forcing colors only works when the server configuration allows it.</p>
-<h2 id="can-i-copy-my-config-from-insert-other-modgame-here">Can I copy my config from &lt;insert other mod/game> here?</h2>
-<p>While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but <em>don't</em> try to copy q3config.cfg between different mods.</p>
-<h3 id="how-do-i-change-the-status-bar-style">How do I change the status bar style?</h3>
-<p>Use <code>cg_ratstatusbar</code> with a value of:</p>
+<p>If you want the default team colors back, use a blank value: <code>""</code></p>
+<p>Some people ask: <a href="faq.html#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</a></p>
+<p>To see an overview of the available votes, type <code>\cv</code> in the game console.</p>
+<p>To see custom votes available, type <code>\cv custom</code> in the game console. You can also use the vote menu (Esc -&gt; Call Vote -&gt; Custom Vote)</p>
+<p>If you're new to ratmod, please check out the <a href="config-command-reference.html#helpful-binds-and-commands">Helpful Binds and Commands</a>.</p>
+<p>For further customization, check out the <a href="config-command-reference.html">Config and Command Reference</a>.</p>
+<h2 id="the-team-queue-system">The Team Queue System</h2>
+<p>There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.</p>
+<p>This is not yet on by default <em>yet</em> and it is a vote: <code>\cv custom queues</code></p>
 <ul>
-<li><code>0</code> = old-school OA statusbar</li>
-<li><code>1</code> = flag on the left</li>
-<li><code>2</code> = flag on right</li>
-<li><code>3</code> = minimalistic version</li>
-<li><code>4</code> = futuristic statusbar with health/armor bars in the center, ammo bar on the left. Also enables new powerup display</li>
-<li><code>5</code> = similar to 4, but vertically flipped</li>
-</ul>
-<h2 id="how-do-i-turn-off-taunts">How do I turn off taunts?</h2>
-<p>You can vote to toggle it off or on with <code>\cv custom taunts</code>.</p>
-<h2 id="why-isnt-r_picmip-working">Why isn't <code>r_picmip</code> working?</h2>
-<p>This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.</p></div>
+<li>All people waiting in queue will be shown on the scoreboard with appropriately colored text.</li>
+<li>when a player for each team is available in the queue, they will join the game.</li>
+<li>If the teams become unequal because one or more of the players leave, then the server will equalize the player numbers. This will happen after a round is finished for round-based game types. The last player that joined a team is put in queue in this situation.</li>
+</ul></div>
             </div>
         </div>
 

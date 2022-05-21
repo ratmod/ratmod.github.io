@@ -1,209 +1,236 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This website contains the documentation (or docs) for a mod for the game Open Arena. The mod is called ratmod. These are the docs for ratmod. You can find information about ratmod config, ratmod servers, and ratmod setup as well as explanations about ratmod in the docs. There are recommendations about game engines to use for ratmod. Ratmod is a free to use mod for AFPS (Arena First Person Shooter) game that is like Quake 3.">
-  
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Ratmod - ratmod documentation / docs</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-  <link href="theme/theme.css" rel="stylesheet">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Ratmod";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href="index.html" class="icon icon-home"> ratmod documentation / docs</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="index.html">Ratmod</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#ratmod-by-the-rats-for-the-rats">Ratmod - by the rats, for the rats</a></li>
-    
-        <ul>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This website contains the documentation (or docs) for a mod for the game Open Arena. The mod is called ratmod. These are the docs for ratmod. You can find information about ratmod config, ratmod servers, and ratmod setup as well as explanations about ratmod in the docs. There are recommendations about game engines to use for ratmod. Ratmod is a free to use mod for AFPS (Arena First Person Shooter) game that is like Quake 3.">
         
-            <li><a class="toctree-l3" href="#getting-started-with-ratmod">Getting Started with Ratmod</a></li>
         
-            <li><a class="toctree-l3" href="#the-team-queue-system">The Team Queue System</a></li>
-        
-        </ul>
-    
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>ratmod docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/darcula.min.css">
+        <link href="theme/theme.css" rel="stylesheet">
 
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="config-command-reference.html">Config and Command Reference</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="medal-reference.html">Medal Reference</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="callvote-reference.html">Callvote Reference</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="game-types.html">Custom Game Types</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="tweaks.html">Perfomance Tweaks</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="faq.html">FAQ</a>
-	    </li>
-          
-        </ul>
-      </div>
-      &nbsp;
-    </nav>
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ratmod docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">ratmod documentation / docs</a>
-      </nav>
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="getting-started.html" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="config-command-reference.html" class="dropdown-item">Config and Command Reference</a>
+</li>
+                                    
+<li>
+    <a href="medal-reference.html" class="dropdown-item">Medal Reference</a>
+</li>
+                                    
+<li>
+    <a href="callvote-reference.html" class="dropdown-item">Callvote Reference</a>
+</li>
+                                    
+<li>
+    <a href="game-types.html" class="dropdown-item">Custom Game Types</a>
+</li>
+                                    
+<li>
+    <a href="tweaks.html" class="dropdown-item">Perfomance Tweaks</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="faq.html" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="downloads.html" class="nav-link">Downloads</a>
+                            </li>
+                        </ul>
 
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Ratmod</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p><img alt="rathead" src="images/screenshots/ratmod-head-header.svg" /></p>
-<h1 id="ratmod-by-the-rats-for-the-rats">Ratmod - by the rats, for the rats</h1>
-<p>This is documentation for ratmod - an open source mod for <a href="http://www.openarena.ws">Open Arena (OA)</a> which is a Quake 3 Arena clone. </p>
-<p>You can find the source code for the mod <a href="https://github.com/rdntcntrl/ratoa_gamecode">hosted on github.com</a>.</p>
-<p>Navigate to different pages using the navigation links.</p>
-<h2 id="getting-started-with-ratmod">Getting Started with Ratmod</h2>
-<p>Ratmod is all set up for you with great defaults. Make sure that auto-download is on and when you go on a Ratmod server everything will be set for you. </p>
-<p>To make an enemy model green and team model pink:</p>
-<ul>
-<li><code>\cg_enemyColor green</code></li>
-<li><code>\cg_teamColor pink</code></li>
-</ul>
-<p>If you want the default team colors back, use a blank value: <code>""</code></p>
-<p>Some people ask: <a href="faq.html#why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</a></p>
-<p>To see an overview of the available votes, type <code>\cv</code> in the game console.</p>
-<p>To see custom votes available, type <code>\cv custom</code> in the game console. You can also use the vote menu (Esc -&gt; Call Vote -&gt; Custom Vote)</p>
-<p>If you're new to ratmod, please check out the <a href="config-command-reference.html#helpful-binds-and-commands">Helpful Binds and Commands</a>.</p>
-<p>For further customization, check out the <a href="config-command-reference.html">Config and Command Reference</a>.</p>
-<h2 id="the-team-queue-system">The Team Queue System</h2>
-<p>There is now a queue system available for team-based modes. The intention of this system is to make sure the teams have equal numbers. It only allows people to join in pairs, which ensures that joining players cannot create unequal teams.</p>
-<p>This is not yet on by default <em>yet</em> and it is a vote: <code>\cv custom queues</code></p>
-<ul>
-<li>All people waiting in queue will be shown on the scoreboard with appropriately colored text.</li>
-<li>when a player for each team is available in the queue, they will join the game.</li>
-<li>If the teams become unequal because one or more of the players leave, then the server will equalize the player numbers. This will happen after a round is finished for round-based game types. The last player that joined a team is put in queue in this situation.</li>
-</ul>
-              
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="getting-started.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="config-command-reference.html" class="btn btn-neutral float-right" title="Config and Command Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
         </div>
-      </div>
 
-    </section>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-  </div>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#ratmod-by-the-rats-for-the-rats" class="nav-link">Ratmod - by the rats, for the rats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-        <span style="margin-left: 15px"><a href="config-command-reference.html" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+<p><img alt="rathead" src="images/screenshots/ratmod-head-header.svg" /></p>
+<h1 id="ratmod-by-the-rats-for-the-rats">Ratmod - by the rats, for the rats</h1>
+<p>This is documentation for ratmod/RatArena - an open source mod for <a href="http://www.openarena.ws">Open Arena (OA)</a> which is a Quake 3 Arena clone. 
+RatArena is a mod for OpenArena for both competitive and casual gameplay.</p>
+<p>It adds many new features and quality improvements, among them are:</p>
+<ul>
+<li>delagged projectiles</li>
+<li>improved local prediction of various game events as well as other anti-lag features</li>
+<li>latency equalizer for maximum fairness (optional)</li>
+<li>new gametypes: Multitournament (multiple simultaneous duels), Extermination (Wipeout),
+  FreezeTag, CoinFFA, CoinTDM, Treasure Hunter</li>
+<li>missiles can go through teleporters</li>
+<li>grenades are pushed by jumppads</li>
+<li>highly configurable brightskins or bright player outlines (can be disabled)</li>
+<li>ping feature to help coordinating in team games</li>
+<li>friend markers that are visible through walls and indicate health/armor status</li>
+<li>improved map vote menu</li>
+<li>configurable map vote at the end of games</li>
+<li>improved HUD with widescreen support</li>
+<li>new, high-res icons</li>
+<li>new font</li>
+<li>other 2d upgrades</li>
+<li>new awards (medals)</li>
+<li>new announcer</li>
+<li>team queue system to enforce equal team sizes</li>
+<li>team balance system</li>
+<li>improved weapon visuals (e.g. rail, rockets, lightning gun, grenades, ..)</li>
+<li>pause/unpause feature</li>
+<li>physics improvements</li>
+<li>physics settings: additive jump, rampjump, ratmode (more aircontrol), etc.</li>
+<li>taunts</li>
+<li>numerous bugfixes and quality improvements</li>
+<li>...and much more!</li>
+</ul>
+<p>Navigate to different pages using the navigation links.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="js/theme.js" defer></script>
-      <script src="search/main.js" defer></script>
 
-</body>
+    </body>
 </html>
 
 <!--
-MkDocs version : 1.0.4
-Build Date UTC : 2021-10-09 11:50:56
+MkDocs version : 1.3.0
+Build Date UTC : 2022-05-21 14:46:25.757165+00:00
 -->
