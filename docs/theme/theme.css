@@ -4,6 +4,7 @@
 /* ------------------------------------------------------------ */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 :root {
   --sidebar: #323232;
@@ -12,7 +13,7 @@
 }
 
 
-body.wy-body-for-nav, section.wy-nav-content-wrap {
+body.wy-body-for-nav, section.wy-nav-content-wrap, .wy-nav-content {
   background-color: #28282d;
   color: #b3b3b3;
 }
@@ -158,7 +159,10 @@ footer {display: none;}
   color: var(--off-white) !important;
 }
 
-.toctree-l2 a:first-child {display: none;}
+/*.toctree-l2 a:first-child {display: none;}*/
+.toctree-l1.current > a {border:none !important;}
+.toctree-l3 {display:none !important;}
+button.toctree-expand {display:none !important;}
 
 /* ------------------------------------------------------------ */
 /* Logo: ;                                                      */
@@ -313,6 +317,7 @@ td,th {
 }
 
 
+.rst-content .admonition { padding: 0 !important; }
 
 div.admonition {
   background-color: #333338;
@@ -344,15 +349,12 @@ h1,h2,h3 {
 
 
 code {
-  border: none;
-  color: #9FCC2E;
-  color: #2DD881;
-  color: #56D895;
-  color: #4EC487;
-  background-color: #202028;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  font-family: 'Roboto', "Helvetica", sans-serif;
+  border: none !important;
+  color: #4EC487 !important;
+  background-color: #202028 !important;
+  font-size: 0.8rem !important;
+  /* font-family: 'Roboto', "Helvetica", sans-serif !important; */
+  font-family: 'Overpass Mono', monospace !important;
 }
 
 td > code {
