@@ -1,20 +1,18 @@
-site_name: ratmod documentation / docs
-theme:
-  name: readthedocs
-  custom_dir: docs/theme
+site_name: ratmod docs
+theme: slate
 extra_css:
-    - https://fonts.googleapis.com/css?family=Open+Sans:300,600
-    - theme/theme.css
+  - theme/theme.css
 markdown_extensions:
   - admonition
 site_description: "This website contains the documentation (or docs) for a mod for the game Open Arena. The mod is called ratmod. These are the docs for ratmod. You can find information about ratmod config, ratmod servers, and ratmod setup as well as explanations about ratmod in the docs. There are recommendations about game engines to use for ratmod. Ratmod is a free to use mod for AFPS (Arena First Person Shooter) game that is like Quake 3."
 use_directory_urls: false
 nav:
-  - Ratmod: index.md
-  - Config and Command Reference: config-command-reference.md
-  - Medal Reference: medal-reference.md
-  - Callvote Reference: callvote-reference.md
-  - Custom Game Types: game-types.md
-  - Perfomance Tweaks: tweaks.md
+  - Getting Started: index.md
+  - Docs:
+    # these are nested in a dropdown menu
+    - Config and Command Reference: config-command-reference.md
+    - Medal Reference: medal-reference.md
+    - Callvote Reference: callvote-reference.md
+    - Custom Game Types: game-types.md
+    - Perfomance Tweaks: tweaks.md
   - FAQ: faq.md
-
