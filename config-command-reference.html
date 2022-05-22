@@ -191,7 +191,7 @@
 <ul>
 <li><code>\doc</code></li>
 </ul>
-<h4 id="show-the-physics-rules-for-the-current-server">Show the physics rules for the current server</h4>
+<h4 id="show-the-rules-game-configuration-for-the-current-server">Show the rules / game configuration for the current server</h4>
 <ul>
 <li><code>\rules</code></li>
 </ul>
@@ -209,12 +209,13 @@
 <li><code>\team q</code> = queue (for duel gametype or when the queue system is on)</li>
 <li><code>\team n</code> = notready (queued in duel, but not selected for next game)</li>
 <li><code>\team a</code> = afk (away from keyboard)</li>
+<li><code>\team [game-id]</code> = join a specific multitournament game</li>
 </ul>
 <h4 id="spectator-commands">Spectator commands:</h4>
 <ul>
 <li><code>\followauto</code> Automatically cycle spectating through players. It also switches to flag carriers automatically in CTF.</li>
-<li><code>\game &lt;1-5&gt;</code> select which game to watch. This only works for multi-tournament server while you are in spectator mode.</li>
 <li>In the multi-tournament server, <code>\specgame [game-id]</code> can be used to limit spectating and cycling of players to one particular match. <code>\specgame</code> resets the behavior to cycle through all players of all matches. This feature is useful especially for those casting or streaming games.</li>
+<li><code>\game &lt;1-5&gt;</code> select which game to watch. This only works for multi-tournament server while you are in spectator mode.</li>
 </ul>
 <h4 id="calling-for-timeout">Calling for timeout:</h4>
 <ul>
@@ -225,7 +226,7 @@
 <h4 id="drop-the-currently-held-item">Drop the currently held item</h4>
 <ul>
 <li>Example: <code>bind m drop</code></li>
-<li>If this is enabled by the server you will drop flags, weapons or ammo.</li>
+<li>If this is enabled by the server you will drop flags, powerups or weapons.</li>
 </ul>
 <h4 id="displaying-and-playing-taunts">Displaying and Playing Taunts</h4>
 <ul>
@@ -430,12 +431,18 @@
 <h3 id="announcer">Announcer</h3>
 <p>Ratmod has a new set of vocal announcements. You can switch back to the original OA announcements if you prefer with <code>set cg_announcer ""</code>. </p>
 <p>Use treb's voice with <code>set cg_announcer "treb"</code> and if you only want treb's voice for the new awards use <code>set cg_announcer ""</code> and <code>set cg_announcerNewAwards "treb"</code>.</p>
+<h3 id="weapons">Weapons</h3>
+<ul>
+<li><code>set cg_rgSound 1-2</code> - Select railgun soundpack.</li>
+<li><code>set cg_lgSound 1-3</code> - Select lightning gun soundpack.</li>
+</ul>
 <h3 id="other-sound-settings">Other Sound Settings</h3>
 <ul>
-<li><code>set cg_teamChatBeep 1</code> - Toggle the chat beeps from your team. These are from any team you are on (red, blue, or spectator)</li>
-<li><code>set cg_chatBeep 1</code> - Toggle chat beep sounds on or off</li>
+<li><code>set cg_teamChatBeep 2</code> - Select the chat beeps from your team. These are from any team you are on (red, blue, or spectator). <code>0</code> will disable it.</li>
+<li><code>set cg_chatBeep 2</code> - Select the chat beep sound. <code>0</code> will disable it.</li>
 <li><code>set cg_music 0</code> - Toggle music on or off</li>
 <li><code>set cg_hitsound 1</code>- Toggle wether or not hit sounds are played when you hit an enemy with your weapon. </li>
+<li><code>set cg_taunts 0</code>- Disable taunts (can be overriden by the server, see <code>\rules</code>).</li>
 </ul>
 <h2 id="hud">HUD</h2>
 <h3 id="status-bar">Status Bar</h3>
@@ -672,6 +679,8 @@
 </ul>
 <h2 id="consolechat">Console/Chat</h2>
 <ul>
+<li><code>set cg_chat 0</code> - Hide all chats. Intended for streamers.</li>
+<li><code>set cg_teamChatsOnly 1</code> - Only show team chats</li>
 <li><code>set cg_newConsole 1</code> - set this to <code>0</code> if you want to have the console messages printed by ioq3 again.</li>
 <li><code>set cg_newFont 1</code> - set to <code>0</code> for old font</li>
 <li><code>set cg_fontShadow 1</code> - drop shadow behind console/chat text to increase readability</li>
