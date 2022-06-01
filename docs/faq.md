@@ -7,7 +7,7 @@ Since ioquake3 is open source there are several options. These are known to work
 - [ioquake3](https://github.com/ioquake/ioq3). If you are compiling ioquake3 on your own, make sure to do so with Ogg Vorbis support. See [below](#how-do-i-launch-ioquake3-engine) for details about how to launch the engine.
 - [openarena-ioq3](https://github.com/OpenArena-Ioq3/openarena-ioq3). This is a fork of ioquake3 that is pre-configured for OpenArena and keeps up to date with the ioq3 master.
 - [openarena engine](http://openarena.ws/download.php) (ioquake3+oa) (this is outdated). This is also available in various Linux distributions.
-- [fx3](http://www.h4l-group.de/pub/Q3_engines/fX3/client/for_OA/)
+- [fx3](https://codeberg.org/ChannelZ/fX3). Based on ioq3, with various improvements (graphics & sound options, tabbed console, etc)
 
 It is not recommended to use **yuengine**. This engine is known to produce audio and visual bugs with ratmod.
 
