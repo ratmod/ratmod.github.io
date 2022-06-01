@@ -84,3 +84,20 @@ You may also be able to vote to toggle taunts off or on for everyone with `\cv c
 
 This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.
 
+## Does Ratmod run on the quake3e engine?
+
+While it *may* be possible to run OA+Ratmod on quake3e, you won't be able to join any of the servers that are running on ioq3 / ioq3+oa.
+
+## Why do I get a "Connection Interrupted" message despite having a stable connection?
+
+Most likely the issue is that you are playing with high FPS (say, >= 250 FPS) and your ping is also high. Due to an engine limitation, higher FPS requires lower pings. Try reducing `\com_maxfps` to a lower value.
+
+## How do I enable VoIP?
+
+First, you need to setup OA with ioquake3 (see above). Make sure you pass `+set com_protocol 72` to the ioquake3 command. The openarena-ioq3 fork already does this for you.
+
+VoIP can then be enabled using `set cl_voip 1`
+Then bind a key to record: `\bind somekey +voiprecord`. You should see a sound meter on the HUD while the game is recording.
+
+Visit the [ioquake3 voip readme](https://github.com/ioquake/ioq3/blob/main/voip-readme.txt) for more details.
+
