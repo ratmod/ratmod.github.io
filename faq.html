@@ -134,6 +134,18 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#does-ratmod-run-on-the-quake3e-engine" class="nav-link">Does Ratmod run on the quake3e engine?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-do-i-get-a-connection-interrupted-message-despite-having-a-stable-connection" class="nav-link">Why do I get a "Connection Interrupted" message despite having a stable connection?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-do-i-enable-voip" class="nav-link">How do I enable VoIP?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -158,7 +170,8 @@
 <pre><code>ioquake3 +set fs_basepath "path/to/openarena/installation" \
      +set com_homepath .openarena +set com_basegame baseoa \
      +set com_legacyprotocol 71 +set com_protocol 72 \
-     +set sv_master1 dpmaster.deathmask.net +set cl_motd 0 \
+     +set sv_master1 dpmaster.deathmask.net \
+     +set com_standalone 1 +set cl_motd 0 \
      +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 \
      +set cl_renderer opengl1
 </code></pre>
@@ -186,7 +199,7 @@ See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocol
 <h3 id="for-windows">For Windows</h3>
 <p>The options are generally the same as for Linux, but <code>com_homepath</code> should be set to OpenArena instead.</p>
 <p>Launch with the following:</p>
-<pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
+<pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
 </code></pre>
 <h2 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h2>
 <p>Forcing colors only works when the server configuration allows it.</p>
@@ -206,7 +219,16 @@ See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocol
 <p>You can disable taunts with <code>\cg_taunts 0</code>. Note that this will only work if the server doesn't force taunts to be on. You can check using <code>\rules</code>.
 You may also be able to vote to toggle taunts off or on for everyone with <code>\cv custom taunts</code>.</p>
 <h2 id="why-isnt-r_picmip-working">Why isn't <code>r_picmip</code> working?</h2>
-<p>This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.</p></div>
+<p>This is a client-side setting, but please remember that it can be disabled by the server configuration. For example, it is disabled in the treasure hunter game type.</p>
+<h2 id="does-ratmod-run-on-the-quake3e-engine">Does Ratmod run on the quake3e engine?</h2>
+<p>While it <em>may</em> be possible to run OA+Ratmod on quake3e, you won't be able to join any of the servers that are running on ioq3 / ioq3+oa.</p>
+<h2 id="why-do-i-get-a-connection-interrupted-message-despite-having-a-stable-connection">Why do I get a "Connection Interrupted" message despite having a stable connection?</h2>
+<p>Most likely the issue is that you are playing with high FPS (say, &gt;= 250 FPS) and your ping is also high. Due to an engine limitation, higher FPS requires lower pings. Try reducing <code>\com_maxfps</code> to a lower value.</p>
+<h2 id="how-do-i-enable-voip">How do I enable VoIP?</h2>
+<p>First, you need to setup OA with ioquake3 (see above). Make sure you pass <code>+set com_protocol 72</code> to the ioquake3 command. The openarena-ioq3 fork already does this for you.</p>
+<p>VoIP can then be enabled using <code>set cl_voip 1</code>
+Then bind a key to record: <code>\bind somekey +voiprecord</code>. You should see a sound meter on the HUD while the game is recording.</p>
+<p>Visit the <a href="https://github.com/ioquake/ioq3/blob/main/voip-readme.txt">ioquake3 voip readme</a> for more details.</p></div>
             </div>
         </div>
 
