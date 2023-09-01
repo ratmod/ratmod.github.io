@@ -58,7 +58,8 @@ Launch with the following:
 
 ## Why don't brightskins/shells/outlines show up even though I configured them?
 
-Forcing colors only works when the server configuration allows it.
+Forcing models and colors only works when the server configuration allows it.
+Check `\rules` to see what the server allows.
 
 ## Can I copy my config from <insert other mod/game\> here?
 

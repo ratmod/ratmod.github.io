@@ -18,12 +18,16 @@ To use a command directly in the in-game console, it must be preceeded with a sl
 
 ## Personalization
 
-Be unique. Set your nickname by using `set name "yourname"`. Also set your model with `set model <modelname>`. Use the `body/head` format to set the head differently. Example: `set model beret/sarge`
+Be unique. Set your nickname by using `set name "yourname"`. Also set your model with `set model <modelname>`. Use the `model/skin` format to select a different skin of a model. Example: `set model beret/headcrash`.
+
+Models for team games are set with `set team_model <modelname`. You can sett a different model for the head using `set headmodel <modelname>` and `set team_headmodel <modelname>`.
 
 Personalize your rail color with a hue value from 0-360. Examples:
 
 - `set color1 H240` (rail core)
 - `set color2 H140` (rail trail)
+
+`color2` will also affect the color your model's bright shell / outline depending on the server configuration.
 
 ## Helpful Binds and Commands
 
@@ -178,6 +182,9 @@ There are several options available to force models and colors for models.
 
 ### Forcing Models
 
+!!! Info "Note"
+    Forcing models only works when the server configuration allows it (check `\rules` for "Forced models").
+
 Sarge and smarine each have a "gray" skin for brightshell and brightoutline overlays:
 
 - `set cg_teamModel sarge/gray` for your team
@@ -190,9 +197,14 @@ Alternatively, the "bright" skins are available for better performance (but don'
 - `set cg_teamModel sarge/bright` 
 - `set cg_enemyModel smarine/bright` 
 
-Set `cg_forceModel` to `1` to visually force other players have the same model as yours (for non-team based modes). *This is usually used for performance.*
+Note: `cg_teamModel` also sets your own model and so also applies to non-team games.
 
-If you wish to see your team mate's own models, you must set `cg_teamModel` to an empty value (`""`).
+If you wish to not force models even though it is allowed, you can set `cg_teamModel` and/or `cg_enemyModel` to an empty value (`""`). This causes the player's individual models to be shown.
+Setting `cg_teamModel` to `""` will also show your own configured model (`\model` or `\team_model`) correctly.
+
+!!! Info "Note"
+    There is also a legacy cvar `cg_forceModel` which when set to `1` will visually force other players have the same model as yours. *This is usually used for performance reasons as fewer models need to be loaded.* It is **not** required to set this to `1` in order for the forced models described above to work and it may actually interfere with it.
+
 
 ### Bright Shells/Outlines
 
@@ -211,7 +223,8 @@ If you wish to see your team mate's own models, you must set `cg_teamModel` to a
 ### Forcing Colors
 
 !!! Info "Note"
-    Forcing colors only works when the server configuration allows it. These colors apply when `cg_teamModel` or `cg_enemyModel` are set to a bright model (smarine/bright or sarge/bright) or when brightshells are enabled.
+    Forcing colors only works when the server configuration allows it (check `\rules`). These colors apply when brightshells/bright outlines or bright skins are enabled (bright skins also requires `cg_teamModel` or `cg_enemyModel` are set to a bright model, such as smarine/bright or sarge/bright).
+
 
 
 !!! Info "Note about Grenade Colors"
