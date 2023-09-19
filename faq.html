@@ -12,10 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link href="theme/theme.css" rel="stylesheet">
-
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script> 
+        <link href="theme/theme.css" rel="stylesheet"> 
     </head>
 
     <body>
@@ -203,7 +200,7 @@ See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocol
 </code></pre>
 <h2 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h2>
 <p>Forcing colors only works when the server configuration allows it.</p>
-<h2 id="can-i-copy-my-config-from-insert-other-modgame-here">Can I copy my config from &lt;insert other mod/game> here?</h2>
+<h2 id="can-i-copy-my-config-from-insert-other-modgame-here">Can I copy my config from &lt;insert other mod/game&gt; here?</h2>
 <p>While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but <em>don't</em> try to copy q3config.cfg between different mods.</p>
 <h3 id="how-do-i-change-the-status-bar-style">How do I change the status bar style?</h3>
 <p>Use <code>cg_ratstatusbar</code> with a value of:</p>
@@ -236,12 +233,14 @@ Then bind a key to record: <code>\bind somekey +voiprecord</code>. You should se
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

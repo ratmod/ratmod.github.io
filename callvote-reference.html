@@ -12,10 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link href="theme/theme.css" rel="stylesheet">
-
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script> 
+        <link href="theme/theme.css" rel="stylesheet"> 
     </head>
 
     <body>
@@ -153,11 +150,11 @@
 <td>Load the next map in the rotation.</td>
 </tr>
 <tr>
-<td>map &lt;mapname></td>
+<td>map &lt;mapname&gt;</td>
 <td>Change the map by name.</td>
 </tr>
 <tr>
-<td>clientkick &lt;clientnumber></td>
+<td>clientkick &lt;clientnumber&gt;</td>
 <td>Kick another player (this is by the client number)</td>
 </tr>
 <tr>
@@ -165,19 +162,19 @@
 <td>Toggle the pre-match warmup. ?</td>
 </tr>
 <tr>
-<td>timelimit &lt;time></td>
+<td>timelimit &lt;time&gt;</td>
 <td>Change the match time limit. <code>0</code> is unlimited.</td>
 </tr>
 <tr>
-<td>fraglimit &lt;frags></td>
+<td>fraglimit &lt;frags&gt;</td>
 <td>Change the frag limit. <code>0</code> is unlimited.</td>
 </tr>
 <tr>
-<td>bots &lt;n></td>
+<td>bots &lt;n&gt;</td>
 <td>Set the number of bots. <code>0</code> to kick all bots. For team modes this is bots per team.</td>
 </tr>
 <tr>
-<td>botskill &lt;n></td>
+<td>botskill &lt;n&gt;</td>
 <td>Set the skill level of the bots. <code>1</code> is easiest and <code>5</code> is the hardest.</td>
 </tr>
 <tr>
@@ -189,7 +186,7 @@
 <td>Unlock the teams.</td>
 </tr>
 <tr>
-<td>arena &lt;n></td>
+<td>arena &lt;n&gt;</td>
 <td>Vote for an arena. Try between 0-8.</td>
 </tr>
 <tr>
@@ -205,12 +202,14 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
