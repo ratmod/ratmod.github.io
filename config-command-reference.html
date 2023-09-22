@@ -173,12 +173,14 @@
 </ul>
 <p>To use a command directly in the in-game console, it must be preceeded with a slash: <code>\command</code> or <code>/command</code>.</p>
 <h2 id="personalization">Personalization</h2>
-<p>Be unique. Set your nickname by using <code>set name "yourname"</code>. Also set your model with <code>set model &lt;modelname&gt;</code>. Use the <code>body/head</code> format to set the head differently. Example: <code>set model beret/sarge</code></p>
+<p>Be unique. Set your nickname by using <code>set name "yourname"</code>. Also set your model with <code>set model &lt;modelname&gt;</code>. Use the <code>model/skin</code> format to select a different skin of a model. Example: <code>set model beret/headcrash</code>.</p>
+<p>Models for team games are set with <code>set team_model &lt;modelname</code>. You can sett a different model for the head using <code>set headmodel &lt;modelname&gt;</code> and <code>set team_headmodel &lt;modelname&gt;</code>.</p>
 <p>Personalize your rail color with a hue value from 0-360. Examples:</p>
 <ul>
 <li><code>set color1 H240</code> (rail core)</li>
 <li><code>set color2 H140</code> (rail trail)</li>
 </ul>
+<p><code>color2</code> will also affect the color your model's bright shell / outline depending on the server configuration.</p>
 <h2 id="helpful-binds-and-commands">Helpful Binds and Commands</h2>
 <p>There are several commands that provide utilities or actions for gameplay. </p>
 <h3 id="getting-help-and-info">Getting Help and Info</h3>
@@ -320,6 +322,10 @@
 <h2 id="forcing-models-and-brightskins">Forcing Models and Brightskins</h2>
 <p>There are several options available to force models and colors for models.</p>
 <h3 id="forcing-models">Forcing Models</h3>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>Forcing models only works when the server configuration allows it (check <code>\rules</code> for "Forced models").</p>
+</div>
 <p>Sarge and smarine each have a "gray" skin for brightshell and brightoutline overlays:</p>
 <ul>
 <li><code>set cg_teamModel sarge/gray</code> for your team</li>
@@ -331,8 +337,13 @@
 <li><code>set cg_teamModel sarge/bright</code> </li>
 <li><code>set cg_enemyModel smarine/bright</code> </li>
 </ul>
-<p>Set <code>cg_forceModel</code> to <code>1</code> to visually force other players have the same model as yours (for non-team based modes). <em>This is usually used for performance.</em></p>
-<p>If you wish to see your team mate's own models, you must set <code>cg_teamModel</code> to an empty value (<code>""</code>).</p>
+<p>Note: <code>cg_teamModel</code> also sets your own model and so also applies to non-team games.</p>
+<p>If you wish to not force models even though it is allowed, you can set <code>cg_teamModel</code> and/or <code>cg_enemyModel</code> to an empty value (<code>""</code>). This causes the player's individual models to be shown.
+Setting <code>cg_teamModel</code> to <code>""</code> will also show your own configured model (<code>\model</code> or <code>\team_model</code>) correctly.</p>
+<div class="admonition info">
+<p class="admonition-title">Note</p>
+<p>There is also a legacy cvar <code>cg_forceModel</code> which when set to <code>1</code> will visually force other players have the same model as yours. <em>This is usually used for performance reasons as fewer models need to be loaded.</em> It is <strong>not</strong> required to set this to <code>1</code> in order for the forced models described above to work and it may actually interfere with it.</p>
+</div>
 <h3 id="bright-shellsoutlines">Bright Shells/Outlines</h3>
 <div class="admonition info">
 <p class="admonition-title">Caution:</p>
@@ -348,7 +359,7 @@
 <h3 id="forcing-colors">Forcing Colors</h3>
 <div class="admonition info">
 <p class="admonition-title">Note</p>
-<p>Forcing colors only works when the server configuration allows it. These colors apply when <code>cg_teamModel</code> or <code>cg_enemyModel</code> are set to a bright model (smarine/bright or sarge/bright) or when brightshells are enabled.</p>
+<p>Forcing colors only works when the server configuration allows it (check <code>\rules</code>). These colors apply when brightshells/bright outlines or bright skins are enabled (bright skins also requires <code>cg_teamModel</code> or <code>cg_enemyModel</code> are set to a bright model, such as smarine/bright or sarge/bright).</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Note about Grenade Colors</p>

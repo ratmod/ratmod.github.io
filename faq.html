@@ -199,7 +199,8 @@ See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocol
 <pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
 </code></pre>
 <h2 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h2>
-<p>Forcing colors only works when the server configuration allows it.</p>
+<p>Forcing models and colors only works when the server configuration allows it.
+Check <code>\rules</code> to see what the server allows.</p>
 <h2 id="can-i-copy-my-config-from-insert-other-modgame-here">Can I copy my config from &lt;insert other mod/game&gt; here?</h2>
 <p>While certain settings might be compatible between different mods (or even other games), there are no guarantees that it will work properly. It's more likely that something will get messed up. We recommend using a manual configuration (autoexec.cfg) containing all your settings that are common across different mods (such as the basic keybinds), but <em>don't</em> try to copy q3config.cfg between different mods.</p>
 <h3 id="how-do-i-change-the-status-bar-style">How do I change the status bar style?</h3>
