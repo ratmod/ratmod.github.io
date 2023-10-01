@@ -150,6 +150,7 @@ This is the screen that pops up with `\mv`:
 
 ### Field of View (FOV) Settings
 - `set cg_fov <value>` to set your normal FOV. 
+- `set cg_horplus 1` causes `cg_fov` to set your vertical FOV instead of the horizontal one. This makes more sense on modern widescreen monitors.
 
 ### Zoom Settings
 - `set cg_zoomfov <value>` to set your zoom fov.
