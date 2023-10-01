@@ -152,6 +152,8 @@ This is the screen that pops up with `\mv`:
 - `set cg_fov <value>` to set your normal FOV. 
 - `set cg_horplus 1` causes `cg_fov` to set your vertical FOV instead of the horizontal one. This makes more sense on modern widescreen monitors.
 
+![Hor+](images/other/horplus.webp)
+
 ### Zoom Settings
 - `set cg_zoomfov <value>` to set your zoom fov.
 - `set cg_zoomToggle 1` enables +zoom to toggle zoom
