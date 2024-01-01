@@ -24,7 +24,8 @@ Using ioquake3 engine will require you to set up a folder with the baseoa pk3s a
 		 +set com_legacyprotocol 71 +set com_protocol 72 \
 		 +set sv_master1 dpmaster.deathmask.net \
 		 +set com_standalone 1 +set cl_motd 0 \
-		 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 \
+         +set com_hunkMegs 256 +set com_zoneMegs 64 \
+         +set com_soundMegs 32 \
 		 +set cl_renderer opengl1
 
 If you wish to start ratmod directly, you can add `+set fs_game rat` at the end of the command.
@@ -53,7 +54,7 @@ The options are generally the same as for Linux, but `com_homepath` should be se
 
 Launch with the following:
 
-	ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
+	ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +set com_soundMegs 32 +set cl_renderer opengl1
 
 
 ## Why don't brightskins/shells/outlines show up even though I configured them?
