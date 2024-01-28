@@ -169,7 +169,8 @@
      +set com_legacyprotocol 71 +set com_protocol 72 \
      +set sv_master1 dpmaster.deathmask.net \
      +set com_standalone 1 +set cl_motd 0 \
-     +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 \
+     +set com_hunkMegs 256 +set com_zoneMegs 64 \
+     +set com_soundMegs 32 \
      +set cl_renderer opengl1
 </code></pre>
 <p>If you wish to start ratmod directly, you can add <code>+set fs_game rat</code> at the end of the command.</p>
@@ -196,7 +197,7 @@ See also the <a href="https://ioquake3.org/help/sys-admin-guide/#networkprotocol
 <h3 id="for-windows">For Windows</h3>
 <p>The options are generally the same as for Linux, but <code>com_homepath</code> should be set to OpenArena instead.</p>
 <p>Launch with the following:</p>
-<pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +com_soundMegs 32 +set cl_renderer opengl1
+<pre><code>ioquake3 +set fs_basepath "path\to\openarena\installation" +set com_homepath OpenArena +set com_basegame baseoa +set com_legacyprotocol 71 +set com_protocol 72 +set sv_master1 dpmaster.deathmask.net +set com_standalone 1 +set cl_motd 0 +set com_hunkMegs 256 +set com_zoneMegs 64 +set com_soundMegs 32 +set cl_renderer opengl1
 </code></pre>
 <h2 id="why-dont-brightskinsshellsoutlines-show-up-even-though-i-configured-them">Why don't brightskins/shells/outlines show up even though I configured them?</h2>
 <p>Forcing models and colors only works when the server configuration allows it.
